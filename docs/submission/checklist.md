@@ -54,7 +54,7 @@ can supply.
 | repo | now | recommendation |
 |---|---|---|
 | gildforge/cli | **public**, MIT | Leave it public. It is the "try it" link. |
-| gildforge/gild-site | **private**, MIT `LICENSE` in the repo | Keep it private **unless the rules require source**. If they do, prefer the rules' private-sharing option (adding judges as collaborators) over making it public. Only make it public after the checks below. |
+| gildforge/gild-site | **private**, Apache 2.0 `LICENSE` in the repo | Keep it private **unless the rules require source**. If they do, prefer the rules' private-sharing option (adding judges as collaborators) over making it public. Only make it public after the checks below. |
 | gildforge/server | private | Leave it private; it is not part of the submission. |
 
 Before making gild-site public, if you decide to:

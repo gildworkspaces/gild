@@ -77,4 +77,4 @@ defaults are what you get here.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Apache 2.0. See [LICENSE](LICENSE).
