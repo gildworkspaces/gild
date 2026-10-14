@@ -1,0 +1,173 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gild-site",
+  "main": "worker.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "limits": {
+    "cpu_ms": 30000
+  },
+  "placement": { "mode": "smart" },
+  "vars": { "ARTIFACTS_EVENTS_QUEUE_ID": "b63cf47f6c094fc6998eb1325eb25a60", "PUBLIC_ORIGIN": "https://gild.gg", "GITHUB_OAUTH_CLIENT_ID": "Ov23liBafr45fi3znRhg" },
+  "observability": { "logs": { "enabled": true, "head_sampling_rate": 1 }, "traces": { "enabled": true, "head_sampling_rate": 1 } },
+  "build": {
+    "command": "node scripts/cqx-artifacts.mjs"
+  },
+  "services": [
+    {
+      "binding": "CQX_HEAVY",
+      "service": "gild-cqx-heavy"
+    },
+    {
+      "binding": "GILD_RENDER",
+      "service": "gild-render"
+    },
+    {
+      "binding": "IMPORTER",
+      "service": "gild-import"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FRAGMENTS",
+      "bucket_name": "gild-fragments"
+    }
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gildforge",
+      "database_id": "658eb402-4a23-4039-b700-d16d933adf7f",
+      "migrations_dir": "migrations"
+    },
+    {
+      "binding": "SEARCH_DB",
+      "database_name": "gild-search",
+      "database_id": "1e68fc9e-1cd2-4472-8803-e4ca2669deea",
+      "migrations_dir": "migrations-search"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "REPO_IMPORT",
+        "class_name": "RepoImport"
+      },
+      {
+        "name": "RUNNER_POOL",
+        "class_name": "RunnerPool"
+      },
+      {
+        "name": "API_CONTROL",
+        "class_name": "ApiControl"
+      },
+      {
+        "name": "REPO_INDEX",
+        "class_name": "RepoIndex"
+      },
+      {
+        "name": "RUN_QUEUE",
+        "class_name": "RunQueue"
+      },
+      {
+        "name": "EVENTS",
+        "class_name": "ForgeEvents"
+      },
+      {
+        "name": "SETTINGS_RENAME",
+        "class_name": "SettingsRename"
+      },
+      {"name":"REPO_CHANNEL","class_name":"RepoChannel"}
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "repo-index-v1",
+      "new_sqlite_classes": [
+        "RepoIndex"
+      ]
+    },
+    {
+      "tag": "actions-v1",
+      "new_sqlite_classes": [
+        "RunQueue"
+      ]
+    },
+    {
+      "tag": "api-v1",
+      "new_sqlite_classes": [
+        "ApiControl"
+      ]
+    },
+    {
+      "tag": "events-v1",
+      "new_sqlite_classes": [
+        "ForgeEvents"
+      ]
+    },
+    {
+      "tag": "settings-rename-v1",
+      "new_sqlite_classes": [
+        "SettingsRename"
+      ]
+    },
+    {"tag":"runner-pool-v1","new_sqlite_classes":["RunnerPool"]},
+    {"tag":"repo-import-v1","new_sqlite_classes":["RepoImport"]},
+    {"tag":"repo-channel-v1","new_sqlite_classes":["RepoChannel"]},
+    {"tag":"public-pages-v1"}
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "RENDER_QUEUE",
+        "queue": "gild-render"
+      },
+      {
+        "binding": "WEBHOOKS",
+        "queue": "gild-webhooks"
+      },
+      {
+        "binding": "PUBLIC_PAGES",
+        "queue": "gild-public-pages"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "gild-artifacts-events",
+        "max_batch_size": 100,
+        "max_batch_timeout": 2,
+        "max_retries": 5
+      },
+      {
+        "queue": "gild-webhooks-dead",
+        "max_batch_size": 10,
+        "max_retries": 7
+      },
+      {
+        "queue": "gild-webhooks",
+        "max_batch_size": 10,
+        "max_batch_timeout": 1,
+        "max_retries": 7,
+        "dead_letter_queue": "gild-webhooks-dead"
+      },
+      {
+        "queue": "gild-public-pages",
+        "max_concurrency": 1,
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 3
+      }
+    ]
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  }
+}

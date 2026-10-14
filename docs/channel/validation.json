@@ -1,0 +1,69 @@
+{
+  "branch": "codex/agents-channel",
+  "base": "8bb2606",
+  "companionCLI": "37e7d8ef1e6eed2a5aa03fb2cac5927762e71bf7",
+  "unitTests": {
+    "pass": 249,
+    "fail": 0
+  },
+  "lastGateResults": {
+    "build:cloudflare": 0,
+    "test:channel:web": 0,
+    "test": 0,
+    "test:privacy": 0,
+    "test:privacy:revert": 0,
+    "test:repo-list:perf": 0,
+    "test:api": 0,
+    "test:events": 0,
+    "test:sessions": 0,
+    "test:import:revert": 0,
+    "test:import": 0,
+    "test:privacy:web": 0,
+    "test:fragments": 0,
+    "test:cqx:bundles": 0,
+    "test:cqx:local": 0,
+    "test:channel": 0,
+    "test:runners:local": 1,
+    "test:settings:local": 1,
+    "test:theme": 0,
+    "test:channel:revert": 0,
+    "tsc": 0,
+    "test:corner": 1,
+    "test:channel:corner": 0
+  },
+  "channelRevertProofs": {
+    "command": "bun run test:channel:revert",
+    "independentCases": 12,
+    "result": "Each reverted implementation compiles and fails its effect test; restored suite passes."
+  },
+  "failures": [
+    {
+      "command": "bun run test:runners:local",
+      "result": "HTTP 500 in CLI polling; Miniflare ProxyWorker reports Network connection lost before the request reaches the app. Three isolated attempts failed on different requests."
+    },
+    {
+      "command": "npm run test:corner (standalone full crawl)",
+      "requiredByCI": "Invoked within test:runners:local",
+      "result": "Timeout waiting for global /search?q=createPull load event at 1400px. Channel page at 1400px passed before the timeout; separate channel-only measurement passes at all three widths."
+    },
+    {
+      "command": "bun run test:settings:local",
+      "requiredByCI": false,
+      "result": "Anonymous organization settings HTTP 200 instead of expected 404. Corresponding pages/layout/settings-view unchanged from base."
+    }
+  ],
+  "corner": {
+    "channelWidths": [
+      1400,
+      1100,
+      400
+    ],
+    "channelResult": "Pass: existing corner measurement, restricted to the channel page; corner clear at every width.",
+    "fullCrawlResult": "Fail: page.waitForURL waiting for global /search?q=createPull load event; actual URL matches expected URL."
+  },
+  "cache": {
+    "policy": "no-store; DO reads",
+    "firstMs": 347,
+    "repeatMedianMs": 96
+  }
+}

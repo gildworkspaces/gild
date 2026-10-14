@@ -1,0 +1,114 @@
+{
+  "companionCLI": {
+    "repo": "gildforge/cli",
+    "commit": "37e7d8ef1e6eed2a5aa03fb2cac5927762e71bf7",
+    "install": "bun install --frozen-lockfile: pass",
+    "build": "bun run build: pass"
+  },
+  "browser": "Google Chrome 154.0.8037.98 on macOS",
+  "unitTests": {
+    "passed": 239,
+    "failed": 0
+  },
+  "gates": [
+    {
+      "name": "install",
+      "seconds": 0.039,
+      "status": 0
+    },
+    {
+      "name": "test",
+      "seconds": 8.154,
+      "status": 0
+    },
+    {
+      "name": "types",
+      "seconds": 0.452,
+      "status": 0
+    },
+    {
+      "name": "privacy",
+      "seconds": 24.073,
+      "status": 0
+    },
+    {
+      "name": "privacy:revert",
+      "seconds": 2.54,
+      "status": 0
+    },
+    {
+      "name": "repo-list:perf",
+      "seconds": 2.644,
+      "status": 0
+    },
+    {
+      "name": "api",
+      "seconds": 70.57,
+      "status": 0
+    },
+    {
+      "name": "events",
+      "seconds": 50.034,
+      "status": 0
+    },
+    {
+      "name": "sessions",
+      "seconds": 46.934,
+      "status": 0
+    },
+    {
+      "name": "build",
+      "seconds": 49.62,
+      "status": 0
+    },
+    {
+      "name": "import:revert",
+      "seconds": 3.988,
+      "status": 0
+    },
+    {
+      "name": "import",
+      "seconds": 44.604,
+      "status": 0
+    },
+    {
+      "name": "privacy:web",
+      "seconds": 100.267,
+      "status": 0
+    },
+    {
+      "name": "fragments",
+      "seconds": 62.3,
+      "status": 0
+    },
+    {
+      "name": "cqx:bundles",
+      "seconds": 9.138,
+      "status": 0
+    },
+    {
+      "name": "cqx:local",
+      "seconds": 256.893,
+      "status": 0
+    },
+    {
+      "name": "runners:local",
+      "seconds": 326.924,
+      "status": 0
+    },
+    {
+      "name": "theme",
+      "seconds": 4.931,
+      "status": 0
+    }
+  ],
+  "finalChecks": {
+    "bun run test": "239 passed, 0 failed",
+    "bunx tsc --noEmit": "pass"
+  },
+  "revertProofs": {
+    "readyRefs": "old all-or-nothing publication fails: main stays at previous tip",
+    "backfill": "old head-only cron query fails: legacy repo has no heads",
+    "restored": "fragment gate passes including automatic alarm retry and backfill without push"
+  }
+}

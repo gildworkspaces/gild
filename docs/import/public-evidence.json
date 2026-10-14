@@ -1,0 +1,144 @@
+{
+  "at": "2026-10-08T14:31:23.339Z",
+  "local_worker": true,
+  "remote_writes": false,
+  "runs": [
+    {
+      "source": "https://github.com/jonschlinkert/is-number.git",
+      "status": {
+        "repository": "avatest/import-small",
+        "source": "https://github.com/jonschlinkert/is-number.git",
+        "mirror": true,
+        "state": "mirroring",
+        "progress": {
+          "phase": "metadata",
+          "completed": 179,
+          "message": "Import complete"
+        },
+        "warnings": [],
+        "error": null,
+        "updated_at": "2026-10-08T13:43:30.259Z",
+        "next_sync": "2026-10-08T14:43:30.259Z",
+        "summary": {
+          "branches": 1,
+          "tags": 11,
+          "commits": 62,
+          "records": 179,
+          "elapsed_ms": 30710.460336
+        }
+      },
+      "covered": [
+        "importCredentials",
+        "importBatch",
+        "importHeartbeat",
+        "importFinish"
+      ],
+      "sourceCounts": {
+        "issues": 21,
+        "pulls": 23,
+        "comments": 111,
+        "reviews": 17,
+        "labels": 7
+      },
+      "calls": 1,
+      "cacheHits": 117,
+      "maxRequestBytes": 29932,
+      "elapsed_ms": 31358.849367000003,
+      "max_rss_kib": 97704,
+      "worker_rss": {
+        "samples": 43,
+        "baseline_kib": 54176,
+        "peak_kib": 721136
+      },
+      "time_output": "       32.25 real         2.89 user         2.91 sys\n           100130816  maximum resident set size\n                3846  page faults",
+      "worker_request_max_bytes": 29932
+    },
+    {
+      "source": "https://github.com/ivmai/bdwgc.git",
+      "status": {
+        "repository": "avatest/import-mid",
+        "source": "https://github.com/ivmai/bdwgc.git",
+        "mirror": true,
+        "state": "mirroring",
+        "progress": {
+          "phase": "metadata",
+          "completed": 6083,
+          "message": "Import complete"
+        },
+        "warnings": [
+          ".github/workflows/CodeQL.yml: gild doesn't run github/codeql-action/init@v4 yet",
+          ".github/workflows/CodeQL.yml: gild doesn't run github/codeql-action/autobuild@v4 yet",
+          ".github/workflows/CodeQL.yml: gild doesn't run github/codeql-action/analyze@v4 yet",
+          ".github/workflows/autotools-build-extra.yml: gild checkout does not support: repository, path",
+          ".github/workflows/autotools-build-extra.yml: gild doesn't run tecolicom/actions-use-homebrew-tools@v1 yet",
+          ".github/workflows/autotools-build-extra.yml: gild doesn't run awalsh128/cache-apt-pkgs-action@v1 yet",
+          ".github/workflows/cmake-build-extra.yml: gild checkout does not support: repository, path",
+          ".github/workflows/cmake-build.yml: matrix exceeds 256 jobs",
+          ".github/workflows/cmake-build.yml: gild checkout does not support: repository, path",
+          ".github/workflows/cmake-cosmo.yml: gild doesn't run bjia56/setup-cosmocc@main yet",
+          ".github/workflows/cppcheck.yml: unsupported expression context steps.cache-cppcheck.outputs.cache-hit",
+          ".github/workflows/cppcheck.yml: actions/cache is a no-op; artifact uploads and cache restoration are unsupported",
+          ".github/workflows/cppcheck.yml: gild checkout does not support: repository, path",
+          ".github/workflows/format-check.yml: gild doesn't run awalsh128/cache-apt-pkgs-action@v1 yet",
+          ".github/workflows/format-check.yml: gild doesn't run mlugg/setup-zig@v2 yet",
+          ".github/workflows/format-check.yml: gild doesn't run DavidAnson/markdownlint-cli2-action@v17 yet",
+          ".github/workflows/make-direct-build.yml: gild checkout does not support: repository, path",
+          ".github/workflows/spell-check.yml: gild doesn't run streetsidesoftware/cspell-action@v8 yet",
+          ".github/workflows/zig-build.yml: matrix exceeds 256 jobs",
+          ".github/workflows/zig-build.yml: gild doesn't run mlugg/setup-zig@v2 yet",
+          ".github/workflows/zig-cross-compile-other.yml: gild doesn't run mlugg/setup-zig@v2 yet",
+          ".github/workflows/zig-cross-compile.yml: gild doesn't run mlugg/setup-zig@v2 yet"
+        ],
+        "error": null,
+        "updated_at": "2026-10-08T14:31:11.598Z",
+        "next_sync": "2026-10-08T15:31:11.598Z",
+        "summary": {
+          "branches": 6,
+          "tags": 144,
+          "commits": 11469,
+          "records": 6083,
+          "elapsed_ms": 2855660.193956
+        }
+      },
+      "covered": [
+        "importCredentials",
+        "importHeartbeat",
+        "importBatch",
+        "importWorkflow",
+        "importFinish"
+      ],
+      "sourceCounts": {
+        "issues": 617,
+        "pulls": 362,
+        "comments": 4849,
+        "reviews": 214,
+        "labels": 3
+      },
+      "calls": 1559,
+      "cacheHits": 571,
+      "maxRequestBytes": 143349,
+      "elapsed_ms": 2858466.95104,
+      "max_rss_kib": 155644,
+      "worker_rss": {
+        "samples": 2913,
+        "baseline_kib": 54176,
+        "peak_kib": 1915176
+      },
+      "time_output": "     2858.76 real       178.60 user       159.30 sys\n           159473664  maximum resident set size\n               65512  page faults",
+      "worker_request_max_bytes": 143349
+    }
+  ],
+  "pageTimings": [
+    {
+      "repository": "avatest/import-small",
+      "first_ms": 59.16319899999871,
+      "repeated_ms": 66.48543700000118
+    },
+    {
+      "repository": "avatest/import-mid",
+      "first_ms": 92.80763000000297,
+      "repeated_ms": 50.35549799999717
+    }
+  ],
+  "wall_ms": 2916863
+}

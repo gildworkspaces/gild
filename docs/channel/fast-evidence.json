@@ -1,0 +1,413 @@
+{
+  "methodology": {
+    "host": "bugsy",
+    "runtime": "real Worker/D1/DO/published HTML + signed SSR",
+    "injectedApiLatencyMs": 300,
+    "comparison": "Supplied production measurements include iMac TLS. After measurements use local disposable fixtures, not deployed production."
+  },
+  "suppliedProductionBaselineMs": {
+    "islandsHTTP": [
+      500,
+      2400
+    ],
+    "participantsHTTP": [
+      800,
+      2100
+    ],
+    "participantsServer": 280,
+    "messagesHTTP": [
+      800,
+      1100
+    ]
+  },
+  "firstRender": {
+    "messages": 50,
+    "viewerRow": true,
+    "postInput": true,
+    "participants": "ParticipantsManage agents@adminuser@avatestmember",
+    "beforeSocketConstruction": true,
+    "socketConstructedAtMs": 213.5,
+    "observedAfterFirstPaintMs": 0,
+    "resumeCursor": "55",
+    "cls": 0.0006173291015625001,
+    "viewerCalls": 1,
+    "initialMessagesGETs": 0,
+    "participantGETs": 0
+  },
+  "islands": [
+    {
+      "httpMs": 7.3,
+      "serverTimingMs": {
+        "identity": 1.0,
+        "policy": 1.0,
+        "viewer_data": 1.0,
+        "total": 3.0
+      }
+    },
+    {
+      "httpMs": 19.77,
+      "serverTimingMs": {
+        "identity": 1.0,
+        "policy": 0.0,
+        "viewer_data": 2.0,
+        "total": 3.0
+      }
+    },
+    {
+      "httpMs": 11.24,
+      "serverTimingMs": {
+        "identity": 1.0,
+        "policy": 0.0,
+        "viewer_data": 1.0,
+        "total": 2.0
+      }
+    },
+    {
+      "httpMs": 7.15,
+      "serverTimingMs": {
+        "identity": 0.0,
+        "policy": 1.0,
+        "viewer_data": 1.0,
+        "total": 2.0
+      }
+    },
+    {
+      "httpMs": 7.94,
+      "serverTimingMs": {
+        "identity": 1.0,
+        "policy": 1.0,
+        "viewer_data": 1.0,
+        "total": 3.0
+      }
+    },
+    {
+      "httpMs": 10.38,
+      "serverTimingMs": {
+        "identity": 1.0,
+        "policy": 1.0,
+        "viewer_data": 1.0,
+        "total": 3.0
+      }
+    }
+  ],
+  "participants": [
+    {
+      "serverTimingMs": {
+        "participants": 1.0,
+        "total": 10.0
+      }
+    },
+    {
+      "serverTimingMs": {
+        "participants": 1.0,
+        "total": 22.0
+      }
+    },
+    {
+      "serverTimingMs": {
+        "participants": 1.0,
+        "total": 13.0
+      }
+    },
+    {
+      "serverTimingMs": {
+        "participants": 1.0,
+        "total": 18.0
+      }
+    },
+    {
+      "serverTimingMs": {
+        "participants": 0.0,
+        "total": 18.0
+      }
+    },
+    {
+      "serverTimingMs": {
+        "participants": 1.0,
+        "total": 11.0
+      }
+    }
+  ],
+  "cacheFirstViewVsWarm": {
+    "runtime": "bugsy local Worker/D1/DO; cache miss induced by a synthetic token mutation",
+    "participants": {
+      "cold": {
+        "httpMs": 58.48,
+        "serverTimingMs": {
+          "participants": 1.0,
+          "total": 11.0
+        }
+      },
+      "warm": [
+        {
+          "httpMs": 14.75,
+          "serverTimingMs": {
+            "participants": 0.0,
+            "total": 11.0
+          }
+        },
+        {
+          "httpMs": 14.41,
+          "serverTimingMs": {
+            "participants": 1.0,
+            "total": 11.0
+          }
+        },
+        {
+          "httpMs": 16.18,
+          "serverTimingMs": {
+            "participants": 0.0,
+            "total": 13.0
+          }
+        },
+        {
+          "httpMs": 15.92,
+          "serverTimingMs": {
+            "participants": 0.0,
+            "total": 13.0
+          }
+        },
+        {
+          "httpMs": 13.39,
+          "serverTimingMs": {
+            "participants": 0.0,
+            "total": 10.0
+          }
+        }
+      ]
+    },
+    "islands": {
+      "cold": {
+        "httpMs": 8.3,
+        "serverTimingMs": {
+          "identity": 1.0,
+          "policy": 1.0,
+          "viewer_data": 2.0,
+          "total": 4.0
+        }
+      },
+      "warm": [
+        {
+          "httpMs": 5.15,
+          "serverTimingMs": {
+            "identity": 0.0,
+            "policy": 1.0,
+            "viewer_data": 1.0,
+            "total": 2.0
+          }
+        },
+        {
+          "httpMs": 4.94,
+          "serverTimingMs": {
+            "identity": 0.0,
+            "policy": 1.0,
+            "viewer_data": 1.0,
+            "total": 2.0
+          }
+        },
+        {
+          "httpMs": 6.2,
+          "serverTimingMs": {
+            "identity": 1.0,
+            "policy": 0.0,
+            "viewer_data": 1.0,
+            "total": 2.0
+          }
+        },
+        {
+          "httpMs": 4.96,
+          "serverTimingMs": {
+            "identity": 1.0,
+            "policy": 0.0,
+            "viewer_data": 1.0,
+            "total": 2.0
+          }
+        },
+        {
+          "httpMs": 5.09,
+          "serverTimingMs": {
+            "identity": 1.0,
+            "policy": 0.0,
+            "viewer_data": 1.0,
+            "total": 2.0
+          }
+        }
+      ]
+    },
+    "publication": {
+      "cold": {
+        "httpMs": 129.91,
+        "serverTimingMs": {}
+      },
+      "warm": {
+        "httpMs": 5.67,
+        "serverTimingMs": {}
+      },
+      "afterToken": {
+        "httpMs": 6.54,
+        "serverTimingMs": {}
+      },
+      "tokenOnlyGenerationPreservesIssueArtifact": true
+    }
+  },
+  "validation": {
+    "cliPin": "47d0e60a73230961590997d07f8f5eb157084a2d",
+    "setupPassed": [
+      "CLI bun install --frozen-lockfile",
+      "CLI bun run build",
+      "site bun install --frozen-lockfile",
+      "google-chrome --version",
+      "bun run build:cloudflare"
+    ],
+    "heavySuiteLock": "lockf ~/Projects/claude/.heavy.lock",
+    "gates": [
+      {
+        "command": "bun run test:channel:fast",
+        "exitCode": 0,
+        "seconds": 21.4
+      },
+      {
+        "command": "bun run test:static:browser",
+        "exitCode": 0,
+        "seconds": 61.3
+      },
+      {
+        "command": "bun run test:repo-shell",
+        "exitCode": 0,
+        "seconds": 383.7
+      },
+      {
+        "command": "bun run test",
+        "exitCode": 0,
+        "seconds": 8.7
+      },
+      {
+        "command": "bunx tsc --noEmit",
+        "exitCode": 0,
+        "seconds": 1.2
+      },
+      {
+        "command": "bun run test:actions:logs:revert",
+        "exitCode": 0,
+        "seconds": 0.9
+      },
+      {
+        "command": "bun run test:privacy",
+        "exitCode": 0,
+        "seconds": 10.4
+      },
+      {
+        "command": "bun run test:privacy:revert",
+        "exitCode": 0,
+        "seconds": 1.6
+      },
+      {
+        "command": "bun run test:repo-list:perf",
+        "exitCode": 0,
+        "seconds": 2.9
+      },
+      {
+        "command": "bun run test:actions:perf",
+        "exitCode": 0,
+        "seconds": 9.8
+      },
+      {
+        "command": "bun run test:api",
+        "exitCode": 0,
+        "seconds": 36.5
+      },
+      {
+        "command": "bun run test:events",
+        "exitCode": 0,
+        "seconds": 59.0
+      },
+      {
+        "command": "bun run test:sessions",
+        "exitCode": 0,
+        "seconds": 60.0
+      },
+      {
+        "command": "bun run test:channel:fast:revert",
+        "exitCode": 0,
+        "seconds": 51.1
+      },
+      {
+        "command": "bun run test:channel:web",
+        "exitCode": 0,
+        "seconds": 18.2
+      },
+      {
+        "command": "bun run test:channel:revert",
+        "exitCode": 0,
+        "seconds": 178.3
+      },
+      {
+        "command": "bun run test:channel:review:revert",
+        "exitCode": 0,
+        "seconds": 223.3
+      },
+      {
+        "command": "bun run test:orchestrator:revert",
+        "exitCode": 0,
+        "seconds": 59.0
+      },
+      {
+        "command": "bun run test:import:revert",
+        "exitCode": 0,
+        "seconds": 8.3
+      },
+      {
+        "command": "bun run test:import",
+        "exitCode": 0,
+        "seconds": 27.6
+      },
+      {
+        "command": "bun run test:privacy:web",
+        "exitCode": 0,
+        "seconds": 27.3
+      },
+      {
+        "command": "bun run test:status-pages",
+        "exitCode": 0,
+        "seconds": 154.5
+      },
+      {
+        "command": "bun run test:static",
+        "exitCode": 0,
+        "seconds": 5.6
+      },
+      {
+        "command": "bun run test:static:revert",
+        "exitCode": 0,
+        "seconds": 39.8
+      },
+      {
+        "command": "bun run test:fragments",
+        "exitCode": 0,
+        "seconds": 49.8
+      },
+      {
+        "command": "bun run test:cqx:bundles",
+        "exitCode": 0,
+        "seconds": 5.6
+      },
+      {
+        "command": "bun run test:cqx:local",
+        "exitCode": 0,
+        "seconds": 130.8
+      },
+      {
+        "command": "bun run test:runners:local",
+        "exitCode": 0,
+        "seconds": 197.2
+      },
+      {
+        "command": "bun run test:theme",
+        "exitCode": 0,
+        "seconds": 4.3
+      }
+    ],
+    "revertProof": "Removing initial server props fails the real browser first-render assertion; restoring them passes. Existing channel/privacy/review reverts also pass.",
+    "privacy": "Private non-readers get 404 without channel HTML/RSC/REST data. JS-disabled public and unlisted signed-in read-only viewer HTML also pass."
+  }
+}

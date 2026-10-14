@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/avatest/lua",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 281.9000000357628,
+    "fcpMs": 452,
+    "loadMs": 388.4000000357628,
+    "bundleReadyMs": 2070.199999988079,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791542179645.9,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/f3430586e0a4fa97703118148c7c0760ce31998f",
+        "startMs": 450.8369140625,
+        "durationMs": 1280.706,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1025066,
+        "responseHeadersSize": 477
+      }
+    ],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 3,
+      "render": 0
+    },
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 23.30000001192093,
+    "fcpMs": 72,
+    "loadMs": 52.5,
+    "bundleReadyMs": 85.09999996423721,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791542181731.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 21.19999998807907,
+    "fcpMs": 284,
+    "loadMs": 181,
+    "bundleReadyMs": 730.3999999761581,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791542182054.8,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/f3430586e0a4fa97703118148c7c0760ce31998f",
+        "startMs": 348.169921875,
+        "durationMs": 30.715,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1025066,
+        "responseHeadersSize": 430
+      }
+    ],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 3,
+      "render": 0
+    },
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.900000035762787,
+    "fcpMs": 272,
+    "loadMs": 195.9000000357628,
+    "bundleReadyMs": 324.7000000476837,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791542182814.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  }
+]

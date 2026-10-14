@@ -1,0 +1,45 @@
+{
+  "runtime": "Full OpenNext app, wrangler dev, local workerd; disposable Artifacts/Git transport",
+  "registration": "gild runner add --org with one-time token, no identity.json",
+  "pushes": {
+    "settingstest/demo": "owner runner bugsy: success; actual CLI checkout and logs",
+    "settingstest/tools": "queued; excluded from group"
+  },
+  "checks": [
+    "public default exclusion",
+    "private selected repo checkout and job success",
+    "public fork approval gates both runner kinds",
+    "one-hour expiry and group-bound registration",
+    "Basic and Bearer checkout second-repo rejection",
+    "org admin runner events and outsider isolation",
+    "native launchd install/status/uninstall on macOS",
+    "cross-owner poll/read rejected",
+    "checkout second repo rejected",
+    "checkout token revoked after finish",
+    "live group removal preserves running lease and blocks next job",
+    "repo/owner concurrent HTTP polls: exactly one lease",
+    "non-admin registration/group edits rejected",
+    "single-use and owner-bound registration",
+    "personal registration",
+    "instant filter and edit labels",
+    "responsive runner/group/setup/repo pages: light/dark at 1400/400",
+    "real page command token consumed once; screenshots redact only after assertion",
+    "group defaults to Default or originating group",
+    "invalid runner and group API bodies return 422",
+    "approved org navigation and relative last seen with absolute hover",
+    "test:corner passed"
+  ],
+  "scaling": {
+    "runtime": "local workerd, actual RunnerPool/RunQueue/D1/RepoIndex and mayRead",
+    "repositories": 20,
+    "runners": 100,
+    "coldMs": 323,
+    "warmMs": 202,
+    "coldReadyCalls": 20,
+    "repeatedReadyCalls": 0,
+    "pollLeaseCalls": 0
+  },
+  "liveFirstMs": 27.688125000000582,
+  "liveRepeatMs": 29.489206999998714,
+  "corner": "> gild-site@0.0.1 test:corner\n> node scripts/corner-check.mjs http://127.0.0.1:65193 /Volumes/Projects/codex/gild-site/.tmp/settings-e2e-uL8DMB/corner.json\n\ncorner clear on every page at every width"
+}

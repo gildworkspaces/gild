@@ -1,0 +1,37 @@
+{
+  "context": "Single local samples. First successful read after repository publication; repeated reads of the identical URL and commit. Cached immutable fragments are stitched per request, not whole-page cached.",
+  "rows": [
+    {
+      "viewer": "anonymous",
+      "visit": "first successful view",
+      "status": 200,
+      "wallMs": 490.55,
+      "serverTiming": "index;dur=46.00;desc=\"indexed pointer\", refs;dur=0;desc=\"in pointer\", snapshot;dur=94.00;desc=\"R2 parallel fragments\", file;dur=0;desc=\"included in snapshot\", score;dur=0;desc=\"stored HTML\", render;dur=0;desc=\"stitch only\", total;dur=140.00, total;dur=259.00",
+      "cacheControl": "private, no-store"
+    },
+    {
+      "viewer": "anonymous",
+      "visit": "repeat same URL and commit",
+      "status": 200,
+      "wallMs": 1205.17,
+      "serverTiming": "index;dur=25.00;desc=\"indexed pointer\", refs;dur=0;desc=\"in pointer\", snapshot;dur=7.00;desc=\"R2 parallel fragments\", file;dur=0;desc=\"included in snapshot\", score;dur=0;desc=\"stored HTML\", render;dur=0;desc=\"stitch only\", total;dur=32.00, total;dur=65.00",
+      "cacheControl": "private, no-store"
+    },
+    {
+      "viewer": "owner",
+      "visit": "first owner view",
+      "status": 200,
+      "wallMs": 805.65,
+      "serverTiming": "index;dur=30.00;desc=\"indexed pointer\", refs;dur=0;desc=\"in pointer\", snapshot;dur=7.00;desc=\"R2 parallel fragments\", file;dur=0;desc=\"included in snapshot\", score;dur=0;desc=\"stored HTML\", render;dur=0;desc=\"stitch only\", total;dur=37.00, total;dur=74.00",
+      "cacheControl": "private, no-store"
+    },
+    {
+      "viewer": "owner",
+      "visit": "repeat same URL and commit",
+      "status": 200,
+      "wallMs": 718.94,
+      "serverTiming": "index;dur=19.00;desc=\"indexed pointer\", refs;dur=0;desc=\"in pointer\", snapshot;dur=5.00;desc=\"R2 parallel fragments\", file;dur=0;desc=\"included in snapshot\", score;dur=0;desc=\"stored HTML\", render;dur=0;desc=\"stitch only\", total;dur=24.00, total;dur=52.00",
+      "cacheControl": "private, no-store"
+    }
+  ]
+}

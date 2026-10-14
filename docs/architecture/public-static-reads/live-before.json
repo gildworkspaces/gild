@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 2125.199999988079,
+    "fcpMs": 2792,
+    "loadMs": 2546,
+    "bundleReadyMs": null,
+    "timeOrigin": 1791533492171,
+    "bundles": [],
+    "calls": null
+  },
+  {
+    "path": "/",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 78.5,
+    "fcpMs": 464,
+    "loadMs": 294.19999998807907,
+    "bundleReadyMs": null,
+    "timeOrigin": 1791533494991.4,
+    "bundles": [],
+    "calls": null
+  },
+  {
+    "path": "/avatest/lua",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 235.89999997615814,
+    "fcpMs": 484,
+    "loadMs": 609.5999999642372,
+    "bundleReadyMs": 2914.599999964237,
+    "timeOrigin": 1791533495754.3,
+    "bundles": [
+      {
+        "path": "/f/v2/bundle/f3430586e0a4fa97703118148c7c0760ce31998f",
+        "startMs": 1657.616943359375,
+        "durationMs": 900.749
+      }
+    ],
+    "calls": null
+  },
+  {
+    "path": "/avatest/lua",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 49.90000003576279,
+    "fcpMs": 96,
+    "loadMs": 80,
+    "bundleReadyMs": 97.90000003576279,
+    "timeOrigin": 1791533498685.8,
+    "bundles": [],
+    "calls": null
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 233.0999999642372,
+    "fcpMs": 652,
+    "loadMs": 861.3999999761581,
+    "bundleReadyMs": 1489.5,
+    "timeOrigin": 1791533501861.6,
+    "bundles": [
+      {
+        "path": "/f/v2/bundle/f3430586e0a4fa97703118148c7c0760ce31998f",
+        "startMs": 978.380126953125,
+        "durationMs": 162.714
+      }
+    ],
+    "calls": null
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 97,
+    "fcpMs": 364,
+    "loadMs": 354.10000002384186,
+    "bundleReadyMs": 397.30000001192093,
+    "timeOrigin": 1791533503371,
+    "bundles": [],
+    "calls": null
+  }
+]

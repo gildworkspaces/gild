@@ -1,0 +1,107 @@
+$ node scripts/latency-browser.mjs
+(node:49517) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Volumes/Projects/codex/gild-site/.worktrees/demo-integration/lib/api/contract.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Volumes/Projects/codex/gild-site/.worktrees/demo-integration/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+| viewer | page | pass | status | TTFB | settled | third-party images done | document round trips | /api fetches | document server-timing | last responses |
+|---|---|---|---|---|---|---|---|---|---|---|
+| anonymous | `/settingstest/demo` | cold | 200 | 41 | 394 | 122 | 2 | /api/v1/repos/settingstest/demo/channel/messages (155), /api/v1/repos/settingstest/demo/channel/participants (184), /api/v1/repos/settingstest/demo/channel/messages (159), /api/v1/repos/settingstest/demo/channel/participants (217), /api/v1/repos/settingstest/demo/channel/messages (150), /api/v1/repos/settingstest/demo/channel/participants (176) | w-published-page=1 w-public-browse=35 w-total=36 | participants@210+184 messages@210+155 |
+| anonymous | `/settingstest/demo` | warm | 200 | 39 | 335 | 95 | 2 | /api/v1/repos/settingstest/demo/channel/messages (151), /api/v1/repos/settingstest/demo/channel/participants (183), /api/v1/repos/settingstest/demo/channel/messages (150), /api/v1/repos/settingstest/demo/channel/participants (182), /api/v1/repos/settingstest/demo/channel/messages (161), /api/v1/repos/settingstest/demo/channel/participants (189) | w-public-browse=33 w-total=33 | participants@153+182 messages@153+150 |
+| anonymous | `/settingstest/demo/issues` | cold | 200 | 39 | 399 | 151 | 1 | /api/repos/settingstest/demo/islands (102), /api/v1/repos/settingstest/demo/channel/messages (170), /api/v1/repos/settingstest/demo/channel/participants (202), /api/repos/settingstest/demo/islands (108), /api/v1/repos/settingstest/demo/channel/messages (161), /api/v1/repos/settingstest/demo/channel/participants (220), /api/repos/settingstest/demo/islands (114), /api/v1/repos/settingstest/demo/channel/messages (160), /api/v1/repos/settingstest/demo/channel/participants (189) | w-published-page=32 w-total=32 | participants@198+202 messages@198+170 |
+| anonymous | `/settingstest/demo/issues` | warm | 200 | 44 | 361 | 122 | 1 | /api/repos/settingstest/demo/islands (106), /api/v1/repos/settingstest/demo/channel/messages (163), /api/v1/repos/settingstest/demo/channel/participants (190), /api/repos/settingstest/demo/islands (114), /api/v1/repos/settingstest/demo/channel/messages (159), /api/v1/repos/settingstest/demo/channel/participants (189), /api/repos/settingstest/demo/islands (8), /api/v1/repos/settingstest/demo/channel/messages (167), /api/v1/repos/settingstest/demo/channel/participants (229) | w-published-page=36 w-total=36 | participants@132+229 messages@132+167 |
+| anonymous | `/settingstest/demo/issues/1` | cold | 200 | 7 | 80 | 129 | 0 | none | w-published-page=2 w-total=2 | 0-1g8ra2gdbjv.js@13+67 39t-uvu7e01b9.js@14+67 |
+| anonymous | `/settingstest/demo/issues/1` | warm | 200 | 39 | 54 | 134 | 1 | none | w-published-page=33 w-total=33 | 39t-uvu7e01b9.js@45+9 1a1tgdqwgw0bx.js@45+9 |
+| anonymous | `/settingstest/demo/pulls` | cold | 200 | 37 | 411 | 145 | 1 | /api/repos/settingstest/demo/islands (116), /api/v1/repos/settingstest/demo/channel/messages (157), /api/v1/repos/settingstest/demo/channel/participants (212), /api/repos/settingstest/demo/islands (120), /api/v1/repos/settingstest/demo/channel/messages (164), /api/v1/repos/settingstest/demo/channel/participants (219), /api/repos/settingstest/demo/islands (101), /api/v1/repos/settingstest/demo/channel/messages (151), /api/v1/repos/settingstest/demo/channel/participants (206) | w-published-page=32 w-total=32 | participants@191+219 messages@191+164 |
+| anonymous | `/settingstest/demo/pulls` | warm | 200 | 40 | 388 | 125 | 1 | /api/repos/settingstest/demo/islands (105), /api/v1/repos/settingstest/demo/channel/messages (167), /api/v1/repos/settingstest/demo/channel/participants (226), /api/repos/settingstest/demo/islands (112), /api/v1/repos/settingstest/demo/channel/messages (169), /api/v1/repos/settingstest/demo/channel/participants (231), /api/repos/settingstest/demo/islands (8), /api/v1/repos/settingstest/demo/channel/messages (169), /api/v1/repos/settingstest/demo/channel/participants (225) | w-published-page=34 w-total=34 | participants@163+225 messages@163+169 |
+| anonymous | `/settingstest/demo/actions` | cold | 200 | 46 | 377 | 154 | 1 | /api/repos/settingstest/demo/islands (113), /api/v1/repos/settingstest/demo/channel/messages (159), /api/v1/repos/settingstest/demo/channel/participants (219), /api/repos/settingstest/demo/islands (109), /api/v1/repos/settingstest/demo/channel/messages (160), /api/v1/repos/settingstest/demo/channel/participants (188), /api/repos/settingstest/demo/islands (73), /api/v1/repos/settingstest/demo/channel/messages (146), /api/v1/repos/settingstest/demo/channel/participants (181) | w-published-page=38 w-total=38 | participants@196+181 messages@196+146 |
+| anonymous | `/settingstest/demo/actions` | warm | 200 | 40 | 317 | 123 | 1 | /api/repos/settingstest/demo/islands (135), /api/v1/repos/settingstest/demo/channel/messages (159), /api/v1/repos/settingstest/demo/channel/participants (225), /api/repos/settingstest/demo/islands (8), /api/v1/repos/settingstest/demo/channel/messages (154), /api/v1/repos/settingstest/demo/channel/participants (181), /api/repos/settingstest/demo/islands (9), /api/v1/repos/settingstest/demo/channel/messages (151), /api/v1/repos/settingstest/demo/channel/participants (184) | w-published-page=33 w-total=33 | participants@133+184 messages@133+151 |
+| anonymous | `/settingstest/demo/agents` | cold | 200 | 10 | 186 | 123 | 0 | /api/repos/settingstest/demo/islands (11), /api/repos/settingstest/demo/islands (8), /api/repos/settingstest/demo/islands (40) | w-published-page=2 w-total=2 | score@153+34 demo@122+42 |
+| anonymous | `/settingstest/demo/agents` | warm | 200 | 40 | 250 | 118 | 1 | /api/repos/settingstest/demo/islands (122), /api/repos/settingstest/demo/islands (67), /api/repos/settingstest/demo/islands (75) | w-published-page=33 w-total=33 | score@209+41 actions@167+46 |
+| anonymous | `/settingstest` | cold | 200 | 7 | 76 | 150 | 0 | none | w-entry=1 w-published-page=2 w-total=3 | 28ywx07sepmlm.js@13+63 08ww7hq15hqq9.js@13+57 |
+| anonymous | `/settingstest` | warm | 200 | 40 | 56 | 135 | 1 | none | w-published-page=33 w-total=33 | 28ywx07sepmlm.js@46+11 0-1g8ra2gdbjv.js@46+10 |
+| signed-in | `/settingstest/demo` | cold | 200 | 69 | 560 | 260 | 2 | /api/v1/repos/settingstest/demo/channel/messages (237), /api/v1/repos/settingstest/demo/channel/participants (270), /api/v1/repos/settingstest/demo/channel/messages (231), /api/v1/repos/settingstest/demo/channel/participants (271), /api/v1/repos/settingstest/demo/channel/messages (245), /api/v1/repos/settingstest/demo/channel/participants (274) | w-retained-asset=1 w-privacy=29 w-app=35 w-total=65 | participants@290+271 messages@290+231 |
+| signed-in | `/settingstest/demo` | warm | 200 | 71 | 538 | 177 | 2 | /api/v1/repos/settingstest/demo/channel/messages (236), /api/v1/repos/settingstest/demo/channel/participants (274), /api/v1/repos/settingstest/demo/channel/messages (235), /api/v1/repos/settingstest/demo/channel/participants (279), /api/v1/repos/settingstest/demo/channel/messages (245), /api/v1/repos/settingstest/demo/channel/participants (277) | w-retained-asset=1 w-privacy=28 w-app=38 w-total=67 | participants@261+277 messages@261+245 |
+| signed-in | `/settingstest/demo/issues` | cold | 200 | 53 | 537 | 188 | 1 | /api/repos/settingstest/demo/islands (129), /api/v1/repos/settingstest/demo/channel/messages (254), /api/v1/repos/settingstest/demo/channel/participants (283), /api/repos/settingstest/demo/islands (118), /api/v1/repos/settingstest/demo/channel/messages (245), /api/v1/repos/settingstest/demo/channel/participants (272), /api/repos/settingstest/demo/islands (128), /api/v1/repos/settingstest/demo/channel/messages (233), /api/v1/repos/settingstest/demo/channel/participants (269) | w-privacy=29 w-app=19 w-total=48 | participants@254+283 messages@254+254 |
+| signed-in | `/settingstest/demo/issues` | warm | 200 | 53 | 510 | 143 | 1 | /api/repos/settingstest/demo/islands (126), /api/v1/repos/settingstest/demo/channel/messages (242), /api/v1/repos/settingstest/demo/channel/participants (293), /api/repos/settingstest/demo/islands (132), /api/v1/repos/settingstest/demo/channel/messages (249), /api/v1/repos/settingstest/demo/channel/participants (276), /api/repos/settingstest/demo/islands (125), /api/v1/repos/settingstest/demo/channel/messages (249), /api/v1/repos/settingstest/demo/channel/participants (278) | w-privacy=29 w-app=19 w-total=48 | participants@234+276 messages@234+249 |
+| signed-in | `/settingstest/demo/issues/1` | cold | 200 | 54 | 141 | 211 | 3 | none | w-privacy=28 w-app=19 w-total=47 | sami.png@100+41 39t-uvu7e01b9.js@100+39 |
+| signed-in | `/settingstest/demo/issues/1` | warm | 200 | 56 | 114 | 182 | 3 | none | w-privacy=29 w-app=19 w-total=48 | sami.png@102+12 39t-uvu7e01b9.js@102+7 |
+| signed-in | `/settingstest/demo/pulls` | cold | 200 | 52 | 528 | 182 | 1 | /api/repos/settingstest/demo/islands (116), /api/v1/repos/settingstest/demo/channel/messages (228), /api/v1/repos/settingstest/demo/channel/participants (264), /api/repos/settingstest/demo/islands (129), /api/v1/repos/settingstest/demo/channel/messages (227), /api/v1/repos/settingstest/demo/channel/participants (278), /api/repos/settingstest/demo/islands (133), /api/v1/repos/settingstest/demo/channel/messages (229), /api/v1/repos/settingstest/demo/channel/participants (269) | w-privacy=28 w-app=19 w-total=47 | participants@250+278 messages@250+227 |
+| signed-in | `/settingstest/demo/pulls` | warm | 200 | 56 | 513 | 141 | 1 | /api/repos/settingstest/demo/islands (128), /api/v1/repos/settingstest/demo/channel/messages (240), /api/v1/repos/settingstest/demo/channel/participants (278), /api/repos/settingstest/demo/islands (121), /api/v1/repos/settingstest/demo/channel/messages (254), /api/v1/repos/settingstest/demo/channel/participants (282), /api/repos/settingstest/demo/islands (124), /api/v1/repos/settingstest/demo/channel/messages (240), /api/v1/repos/settingstest/demo/channel/participants (273) | w-privacy=29 w-app=21 w-total=50 | participants@231+282 messages@231+254 |
+| signed-in | `/settingstest/demo/actions` | cold | 200 | 121 | 595 | 248 | 4 | /api/repos/settingstest/demo/islands (119), /api/v1/repos/settingstest/demo/channel/messages (232), /api/v1/repos/settingstest/demo/channel/participants (273), /api/repos/settingstest/demo/islands (130), /api/v1/repos/settingstest/demo/channel/messages (243), /api/v1/repos/settingstest/demo/channel/participants (272), /api/repos/settingstest/demo/islands (124), /api/v1/repos/settingstest/demo/channel/messages (265), /api/v1/repos/settingstest/demo/channel/participants (279) | w-privacy=29 w-app=85 w-total=114 | participants@322+273 messages@322+232 |
+| signed-in | `/settingstest/demo/actions` | warm | 200 | 103 | 560 | 185 | 4 | /api/repos/settingstest/demo/islands (128), /api/v1/repos/settingstest/demo/channel/messages (252), /api/v1/repos/settingstest/demo/channel/participants (281), /api/repos/settingstest/demo/islands (125), /api/v1/repos/settingstest/demo/channel/messages (240), /api/v1/repos/settingstest/demo/channel/participants (270), /api/repos/settingstest/demo/islands (140), /api/v1/repos/settingstest/demo/channel/messages (243), /api/v1/repos/settingstest/demo/channel/participants (272) | w-privacy=29 w-app=68 w-total=97 | participants@279+281 messages@279+252 |
+| signed-in | `/settingstest/demo/agents` | cold | 200 | 110 | 381 | 231 | 2 | /api/repos/settingstest/demo/islands (131), /api/repos/settingstest/demo/islands (128), /api/repos/settingstest/demo/islands (133) | w-privacy=28 w-app=76 w-total=104 | score@315+66 actions@267+99 |
+| signed-in | `/settingstest/demo/agents` | warm | 200 | 100 | 373 | 177 | 2 | /api/repos/settingstest/demo/islands (122), /api/repos/settingstest/demo/islands (128), /api/repos/settingstest/demo/islands (123) | w-privacy=29 w-app=65 w-total=94 | score@299+74 actions@237+108 |
+| signed-in | `/settingstest` | cold | 200 | 52 | 199 | 305 | 19 | none | w-privacy=28 w-app=17 w-total=45 | sami.png@154+45 3sjvpd7iy0uw-.js@154+43 |
+| signed-in | `/settingstest` | warm | 200 | 50 | 169 | 269 | 19 | none | w-privacy=29 w-app=17 w-total=46 | sami.png@157+12 28ywx07sepmlm.js@157+7 |
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: anonymous /settingstest/demo (cold) fetched per-viewer data after load
++ actual - expected
+
++ [
++   {
++     ms: 155,
++     path: '/api/v1/repos/settingstest/demo/channel/messages'
++   },
++   {
++     ms: 184,
++     path: '/api/v1/repos/settingstest/demo/channel/participants'
++   },
++   {
++     ms: 159,
++     path: '/api/v1/repos/settingstest/demo/channel/messages'
++   },
++   {
++     ms: 217,
++     path: '/api/v1/repos/settingstest/demo/channel/participants'
++   },
++   {
++     ms: 150,
++     path: '/api/v1/repos/settingstest/demo/channel/messages'
++   },
++   {
++     ms: 176,
++     path: '/api/v1/repos/settingstest/demo/channel/participants'
++   }
++ ]
+- []
+
+    at file:///Volumes/Projects/codex/gild-site/.worktrees/demo-integration/scripts/latency-browser.mjs:123:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/messages',
+      ms: 155
+    },
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/participants',
+      ms: 184
+    },
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/messages',
+      ms: 159
+    },
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/participants',
+      ms: 217
+    },
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/messages',
+      ms: 150
+    },
+    {
+      path: '/api/v1/repos/settingstest/demo/channel/participants',
+      ms: 176
+    }
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.3.1
+error: script "test:latency" exited with code 1

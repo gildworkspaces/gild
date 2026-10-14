@@ -1,0 +1,512 @@
+[
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "issues",
+    "feedbackMs": 2.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "pulls",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "actions",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "agents",
+    "feedbackMs": 1.600000023841858,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "score",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "code",
+    "feedbackMs": 1.699999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "pulls",
+    "feedbackMs": 1.4000000357627869,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "actions",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "agents",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "score",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "code",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "issues",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "actions",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "agents",
+    "feedbackMs": 1.2999999523162842,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "score",
+    "feedbackMs": 1.600000023841858,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "code",
+    "feedbackMs": 1.0999999642372131,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "issues",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "pulls",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "agents",
+    "feedbackMs": 1.100000023841858,
+    "cls": 0.00003172959183673469,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "score",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "code",
+    "feedbackMs": 2,
+    "cls": 0.00003172959183673469,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "issues",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0.00003172959183673469,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "pulls",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0.0004987400510204081,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "actions",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0.00003172959183673469,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "score",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0.00003172959183673469,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "code",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "issues",
+    "feedbackMs": 1.0999999642372131,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "pulls",
+    "feedbackMs": 0.7999999523162842,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "actions",
+    "feedbackMs": 1.100000023841858,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "agents",
+    "feedbackMs": 0.8999999761581421,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "issues",
+    "feedbackMs": 2.100000023841858,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "pulls",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "actions",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "agents",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "score",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "code",
+    "feedbackMs": 1.699999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "pulls",
+    "feedbackMs": 1.0999999642372131,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "actions",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "agents",
+    "feedbackMs": 1.4000000357627869,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "score",
+    "feedbackMs": 1.5999999642372131,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "code",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "issues",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "actions",
+    "feedbackMs": 1.4000000357627869,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "agents",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "score",
+    "feedbackMs": 1.2999999523162842,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "code",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "issues",
+    "feedbackMs": 1.399999976158142,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "pulls",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "agents",
+    "feedbackMs": 1.2000000476837158,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "score",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "code",
+    "feedbackMs": 1.9000000357627869,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "issues",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "pulls",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "actions",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "score",
+    "feedbackMs": 1.300000011920929,
+    "cls": 0.00032070937499999993,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "code",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "issues",
+    "feedbackMs": 1.199999988079071,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "pulls",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "actions",
+    "feedbackMs": 0.8999999761581421,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "agents",
+    "feedbackMs": 1.100000023841858,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "warm": true,
+    "tab": "issues",
+    "contentMs": 4
+  },
+  {
+    "warm": true,
+    "tab": "pulls",
+    "contentMs": 3.299999952316284
+  },
+  {
+    "warm": true,
+    "tab": "actions",
+    "contentMs": 3
+  },
+  {
+    "warm": true,
+    "tab": "agents",
+    "contentMs": 2.699999988079071
+  },
+  {
+    "warm": true,
+    "tab": "score",
+    "contentMs": 2.199999988079071
+  },
+  {
+    "warm": true,
+    "tab": "code",
+    "contentMs": 4.5
+  }
+]

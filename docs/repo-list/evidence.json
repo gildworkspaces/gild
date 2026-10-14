@@ -1,0 +1,66 @@
+{
+  "firstMs": 624.8039270000008,
+  "cachedMs": 441.074013999998,
+  "landingTimes": [
+    {
+      "ms": 503.97,
+      "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "ms": 156.05,
+      "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate"
+    }
+  ],
+  "repos": 10,
+  "firstComplete": 10,
+  "overflow": [
+    {
+      "area": "org",
+      "width": 1400,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "area": "repo",
+      "width": 1400,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "area": "org",
+      "width": 400,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "area": "repo",
+      "width": 400,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "area": "org",
+      "width": 1400,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "area": "repo",
+      "width": 1400,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "area": "org",
+      "width": 400,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "area": "repo",
+      "width": 400,
+      "theme": "dark",
+      "overflow": false
+    }
+  ]
+}

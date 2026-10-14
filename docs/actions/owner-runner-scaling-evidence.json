@@ -1,0 +1,13 @@
+{
+  "repositories": 20,
+  "runners": 100,
+  "coldMs": 376.5143429999998,
+  "warmMs": 404.69941500000004,
+  "coldReadyCalls": 20,
+  "repeatedReadyCalls": 0,
+  "pollAccessCalls": 20,
+  "pollLeaseCalls": 0,
+  "overviewBatchedLeaseCalls": 20,
+  "matchedWakeClaims": 1,
+  "nonmatchingWakeClaims": 0
+}

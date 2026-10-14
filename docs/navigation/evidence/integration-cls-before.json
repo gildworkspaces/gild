@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:62456/avatest/nav-test",
+  "ready": "/avatest/nav-test",
+  "shifts": [
+    {
+      "value": 0.0104566084375,
+      "recent": false,
+      "at": 58.80000000074506,
+      "sources": [
+        {
+          "node": "<div class=\"gild-b1d00710-input\"><a href=\"/auth/device?next=%2Favatest%2Fnav-test%2Fagents\">Sign in to speak</a></div>",
+          "previous": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "current": {
+            "x": 24,
+            "y": 946,
+            "width": 352,
+            "height": 37,
+            "top": 946,
+            "right": 376,
+            "bottom": 983,
+            "left": 24
+          }
+        },
+        {
+          "node": "<span role=\"status\" aria-label=\"Channel connection\">live <button class=\"gild-b1d00710-button gild-b1d00710-toggle\" aria-expanded=\"false\">Participants (1)</button></span>",
+          "previous": {
+            "x": 186.375,
+            "y": 426.59375,
+            "width": 179.625,
+            "height": 18.140625,
+            "top": 426.59375,
+            "right": 366,
+            "bottom": 444.734375,
+            "left": 186.375
+          },
+          "current": {
+            "x": 225.96875,
+            "y": 426.59375,
+            "width": 140.03125,
+            "height": 18.140625,
+            "top": 426.59375,
+            "right": 366,
+            "bottom": 444.734375,
+            "left": 225.96875
+          }
+        }
+      ]
+    }
+  ]
+}

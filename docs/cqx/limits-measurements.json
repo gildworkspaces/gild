@@ -1,0 +1,59 @@
+[
+  {
+    "name": "cJSON",
+    "files": 99,
+    "bytes": 726606,
+    "lines": 1485,
+    "ms": 269,
+    "wasmMemory": [
+      {
+        "id": "c",
+        "phase": "gather",
+        "bytes": 6029312
+      },
+      {
+        "id": "c",
+        "phase": "emit",
+        "bytes": 13172736
+      }
+    ]
+  },
+  {
+    "name": "Polly",
+    "files": 801,
+    "bytes": 4479697,
+    "lines": 41676,
+    "ms": 2048,
+    "wasmMemory": [
+      {
+        "id": "csharp",
+        "phase": "gather",
+        "bytes": 14811136
+      },
+      {
+        "id": "csharp",
+        "phase": "emit",
+        "bytes": 53149696
+      }
+    ]
+  },
+  {
+    "name": "large-Polly-2x",
+    "files": 1602,
+    "bytes": 8959394,
+    "lines": 91394,
+    "ms": 3922,
+    "wasmMemory": [
+      {
+        "id": "csharp",
+        "phase": "gather",
+        "bytes": 19464192
+      },
+      {
+        "id": "csharp",
+        "phase": "emit",
+        "bytes": 92536832
+      }
+    ]
+  }
+]

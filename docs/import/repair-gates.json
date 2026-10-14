@@ -1,0 +1,403 @@
+{
+  "main": "c563832fe2b46fc7b88c95e12c79978f34253df7",
+  "staticDependency": "5677ab549f28eb057eb4a5310a36575b1dae7aa9",
+  "cli": "47d0e60a73230961590997d07f8f5eb157084a2d",
+  "node": "v26.3.1",
+  "bun": "1.4.0",
+  "note": "All workflow run commands logged separately and process exits checked. Native macOS Chrome substitutes for the Linux executable. Final runs are serial after a concurrent fixture indexing timeout; no assertion weakened. Generated build output is not committed.",
+  "gates": [
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun install --frozen-lockfile",
+      "cwd": "/Volumes/Projects/codex/gild-cli-import",
+      "ciCommand": "bun install --frozen-lockfile",
+      "index": 0,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/00-api-bun-install-frozen-lockfile.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 459
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run build",
+      "cwd": "/Volumes/Projects/codex/gild-cli-import",
+      "ciCommand": "bun run build",
+      "index": 1,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/01-api-bun-run-build.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 4208
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun install --frozen-lockfile",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun install --frozen-lockfile",
+      "index": 2,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/02-api-bun-install-frozen-lockfile.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 721
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --version",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "google-chrome --version",
+      "index": 3,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/03-api-google-chrome-version.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 98
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run build:cloudflare",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run build:cloudflare",
+      "index": 4,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/04-api-bun-run-build-cloudflare.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 61870
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test && bunx tsc --noEmit",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test && bunx tsc --noEmit",
+      "index": 5,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/05-api-bun-run-test-bunx-tsc-noEmit.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 13745
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:actions:logs:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:actions:logs:revert",
+      "index": 6,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/06-api-bun-run-test-actions-logs-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 1952
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:privacy",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:privacy",
+      "index": 7,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/07-api-bun-run-test-privacy.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 34232
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:privacy:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:privacy:revert",
+      "index": 8,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/08-api-bun-run-test-privacy-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 2749
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:repo-list:perf",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:repo-list:perf",
+      "index": 9,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/09-api-bun-run-test-repo-list-perf.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 6885
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:api",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:api",
+      "index": 10,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/10-api-bun-run-test-api.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 94170
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:events",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:events",
+      "index": 11,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/11-api-bun-run-test-events.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 94699
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:sessions",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:sessions",
+      "index": 12,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/12-api-bun-run-test-sessions.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 109673
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:channel:web",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:channel:web",
+      "index": 13,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/13-api-bun-run-test-channel-web.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 47613
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:channel:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:channel:revert",
+      "index": 14,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/14-api-bun-run-test-channel-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 282576
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:channel:review:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:channel:review:revert",
+      "index": 15,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/15-api-bun-run-test-channel-review-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 683968
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:import:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:import:revert",
+      "index": 16,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/16-api-bun-run-test-import-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 13581
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:import",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:import",
+      "index": 17,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/17-api-bun-run-test-import.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 69963
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:privacy:web",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:privacy:web",
+      "index": 18,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/18-api-bun-run-test-privacy-web.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 85858
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:static",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:static",
+      "index": 19,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/19-api-bun-run-test-static.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 12422
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:static:browser",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:static:browser",
+      "index": 20,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/20-api-bun-run-test-static-browser.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 142453
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:static:revert",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:static:revert",
+      "index": 21,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/21-api-bun-run-test-static-revert.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 88433
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:repo-shell",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:repo-shell",
+      "index": 22,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/22-api-bun-run-test-repo-shell.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 432235
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:fragments",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:fragments",
+      "index": 23,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/23-api-bun-run-test-fragments.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 80510
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:cqx:bundles",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:cqx:bundles",
+      "index": 24,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/24-api-bun-run-test-cqx-bundles.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 15975
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:cqx:local",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:cqx:local",
+      "index": 25,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/25-api-bun-run-test-cqx-local.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 343902
+    },
+    {
+      "workflow": "api.yml",
+      "job": "api",
+      "command": "bun run test:runners:local",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:runners:local",
+      "index": 26,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/26-api-bun-run-test-runners-local.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 396069
+    },
+    {
+      "workflow": "theme.yml",
+      "job": "theme",
+      "command": "bun install --frozen-lockfile",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun install --frozen-lockfile",
+      "index": 27,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/27-theme-bun-install-frozen-lockfile.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 1150
+    },
+    {
+      "workflow": "theme.yml",
+      "job": "theme",
+      "command": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --version",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "google-chrome --version",
+      "index": 28,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/28-theme-google-chrome-version.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 102
+    },
+    {
+      "workflow": "theme.yml",
+      "job": "theme",
+      "command": "bun run test:theme",
+      "cwd": "/Volumes/Projects/codex/gild-site-import",
+      "ciCommand": "bun run test:theme",
+      "index": 29,
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/29-theme-bun-run-test-theme.log",
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 5683
+    }
+  ],
+  "originalFailure": {
+    "run": 37910694998,
+    "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/original-api-failure.log",
+    "cause": "Git/libcurl consumed chunk framing before trace output; an empty decoded response had no receive-data trace lines."
+  },
+  "traceProofs": [
+    {
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/old-linux-trace.log",
+      "exit": 1
+    },
+    {
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/fixed-linux-trace.log",
+      "exit": 0
+    },
+    {
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/fixed-framing-trace.log",
+      "exit": 0
+    },
+    {
+      "log": "/Volumes/Projects/codex/gild-site-import/.tmp/ci-pr59/reject-real-payload.log",
+      "exit": 1
+    }
+  ],
+  "migrationOrder": [
+    "0017_public_pages.sql (#61 first)",
+    "0018_orchestrators.sql (#62 second)",
+    "0019_import_internal_refs.sql (#59 third)"
+  ],
+  "migrationRevert": {
+    "command": "bun run test:import:revert",
+    "exit": 0,
+    "effect": "Renaming import migration back to 0018 fails the live-schema upgrade; restored 0019 passes and retains public-page and orchestrator data."
+  }
+}

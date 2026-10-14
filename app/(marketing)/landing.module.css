@@ -1,0 +1,102 @@
+/* Landing page (design: option A, "lanes"). Layout lives here rather than in
+   inline styles because it needs breakpoints and hover states. */
+
+.wrap { max-width: 1200px; margin: 0 auto; padding-inline: 24px; }
+
+.hero {
+  display: flex; flex-wrap: wrap; gap: 56px; align-items: center;
+  padding-block: 72px 56px;
+}
+.heroText { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin: 0;
+}
+.title {
+  margin: 0; font-size: clamp(40px, 6vw, 68px); line-height: 1.02;
+  letter-spacing: -0.025em; font-weight: 800; text-wrap: balance;
+}
+.lede { margin: 0; font-size: 19px; line-height: 1.55; color: var(--ink-soft); max-width: 34em; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.primary, .secondary {
+  font-weight: 700; padding: 14px 20px; border-radius: 10px; font-size: 16px;
+}
+.primary { background: var(--accent); color: var(--accent-ink); }
+.primary:hover { background: var(--accent-hover); color: var(--accent-ink); }
+.secondary { color: var(--ink); border: 1px solid var(--rule); font-weight: 600; }
+.secondary:hover { border-color: var(--ink-faint); color: var(--ink); }
+
+/* The lane graph: every author gets a lane, newest commit on top. */
+.graph {
+  flex: 1 1 440px; min-width: 0; margin: 0;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 16px; padding: 24px;
+}
+.graphHead, .graphFoot {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  font-family: var(--font-mono); font-size: 12px; color: var(--ink-dim);
+}
+.graphHead { padding-bottom: 16px; border-bottom: 1px solid var(--rule-soft); font-size: 13px; }
+.graphFoot { padding-top: 16px; border-top: 1px solid var(--rule-soft); justify-content: flex-start; gap: 16px; }
+.live { color: var(--accent); }
+.row { display: flex; align-items: stretch; gap: 16px; min-height: 58px; color: var(--ink); }
+.row:hover { color: var(--ink); }
+.row:hover .msg { color: var(--accent); }
+.lanes { position: relative; flex: none; }
+.lane { position: absolute; top: 0; bottom: 0; width: 2px; opacity: 0.5; }
+.dot {
+  position: absolute; top: 21px; width: 14px; height: 14px; margin-left: -6px;
+  border-radius: 50%; border: 3px solid var(--panel);
+}
+.commit { flex: 1; min-width: 0; padding-block: 12px; display: flex; flex-direction: column; gap: 3px; }
+.msg { font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.empty { padding: 28px 0; color: var(--ink-dim); font-size: 15px; line-height: 1.6; }
+
+.band { background: var(--bg-soft); border-top: 1px solid var(--rule-soft); border-bottom: 1px solid var(--rule-soft); }
+.section { padding-block: 88px; }
+.h2 { margin: 0; font-size: 32px; letter-spacing: -0.02em; }
+.sub { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink-soft); max-width: 36em; }
+
+.video {
+  position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;
+  border-radius: 16px; overflow: hidden; background: var(--surface); border: 1px solid var(--rule);
+}
+
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
+.pillar { display: flex; flex-direction: column; gap: 12px; }
+.pillar h3 { margin: 0; font-size: 24px; letter-spacing: -0.01em; }
+.pillar p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
+.pillarTag { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
+
+.steps { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
+.stepsIntro { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.stepList {
+  flex: 2 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 12px; font-family: var(--font-mono); font-size: 15px;
+}
+.step {
+  display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px;
+}
+.stepN { color: var(--accent); width: 24px; }
+.stepCmd { flex: 1; min-width: 0; white-space: nowrap; overflow-x: auto; }
+.stepNote { color: var(--ink-faint); font-size: 13px; }
+
+.reposHead { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 16px; }
+.repo {
+  color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 20px; display: flex; flex-direction: column; gap: 12px; min-height: 148px;
+}
+.repo:hover { border-color: var(--ink-faint); color: var(--ink); }
+.repoName { font-family: var(--font-mono); font-size: 15px; }
+.repoOwner { color: var(--ink-faint); }
+.repoDesc { font-size: 15px; line-height: 1.5; color: var(--ink-soft); flex: 1; }
+.repoMeta { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); }
+.stack { display: flex; flex-direction: column; gap: 28px; }
+
+@media (max-width: 600px) {
+  .hero { padding-block: 40px 40px; gap: 40px; }
+  .section { padding-block: 64px; }
+  .stepNote { flex-basis: 100%; padding-left: 40px; }
+}

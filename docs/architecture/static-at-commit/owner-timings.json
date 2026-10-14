@@ -1,0 +1,22 @@
+{
+  "label": "after",
+  "firstOwner": 99,
+  "owner": {
+    "medianMs": 8,
+    "maxMs": 41,
+    "doCalls": 0,
+    "d1Calls": 4
+  },
+  "firstLanding": 23,
+  "landing": {
+    "medianMs": 7,
+    "maxMs": 10,
+    "doCalls": 0,
+    "d1Calls": 4
+  },
+  "landingNewIsolate": {
+    "ms": 38,
+    "scans": 0
+  },
+  "firstAfterPush": 7
+}

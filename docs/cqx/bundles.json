@@ -1,0 +1,21 @@
+[
+  {
+    "worker": "main",
+    "rawKiB": 27626.83,
+    "gzipKiB": 6126.85,
+    "gzipBytes": 6273895,
+    "modules": [
+      "core"
+    ]
+  },
+  {
+    "worker": "heavy",
+    "rawKiB": 14185.32,
+    "gzipKiB": 1212.21,
+    "gzipBytes": 1241304,
+    "modules": [
+      "c",
+      "csharp"
+    ]
+  }
+]

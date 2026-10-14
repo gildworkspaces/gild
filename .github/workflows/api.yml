@@ -1,0 +1,160 @@
+name: API gates
+on:
+  push:
+    branches: [main]
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  api:
+    runs-on: ${{ fromJSON(vars.CI_RUNS_ON || '"ubuntu-latest"') }}
+    env:
+      # Only disposable fixture repositories are committed by these jobs.
+      GIT_AUTHOR_NAME: Gild API fixture
+      GIT_AUTHOR_EMAIL: fixture@example.test
+      GIT_COMMITTER_NAME: Gild API fixture
+      GIT_COMMITTER_EMAIL: fixture@example.test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Behavioral reverts read immutable baseline commits.
+          fetch-depth: 0
+          path: gild-site
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          repository: gildforge/cli
+          # Import contract/resume companion; keep immutable bytes until its PR lands.
+          ref: 47d0e60a73230961590997d07f8f5eb157084a2d
+          path: gild-cli
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+        working-directory: gild-cli
+      - run: bun run build
+        working-directory: gild-cli
+      - run: bun install --frozen-lockfile
+        working-directory: gild-site
+      # Both the hosted Ubuntu image and bugsy have Chrome preinstalled.
+      - name: Check preinstalled Chrome
+        env:
+          CHROME_PATH: ${{ runner.os == 'macOS' && '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' || '/usr/bin/google-chrome' }}
+        run: |
+          "$CHROME_PATH" --version
+          printf 'CHROME_PATH=%s\n' "$CHROME_PATH" >> "$GITHUB_ENV"
+        working-directory: gild-site
+      # Tests import the real generated asset manifests; build them first.
+      - run: bun run build:cloudflare
+        working-directory: gild-site
+      - run: node --test scripts/chrome.test.mjs && bun run test && bunx tsc --noEmit
+        working-directory: gild-site
+      - run: bun run test:browser-proof:revert
+        working-directory: gild-site
+      - run: bun run test:browser-proof:local
+        working-directory: gild-site
+      - run: bun run test:browser-flow:revert
+        working-directory: gild-site
+      - run: bun run test:browser-flow:local
+        working-directory: gild-site
+      - run: bun run test:idempotency:revert
+        working-directory: gild-site
+      - run: bun run test:idempotency:local
+        working-directory: gild-site
+      - run: bun run test:merge-queue:revert
+        working-directory: gild-site
+      - run: bun run test:merge-queue:local
+        working-directory: gild-site
+      - run: bun run test:actions:logs:revert
+        working-directory: gild-site
+      - run: bun run test:agent-request:revert
+        working-directory: gild-site
+      - run: bun run test:auth-publication:revert
+        working-directory: gild-site
+      - run: bun run test:audits:local
+        working-directory: gild-site
+      - run: bun run test:audits:revert
+        working-directory: gild-site
+      - run: bun run test:privacy
+        working-directory: gild-site
+      - run: bun run test:privacy:revert
+        working-directory: gild-site
+      - run: bun run test:repo-list:perf
+        working-directory: gild-site
+      - run: bun run test:actions:perf
+        working-directory: gild-site
+      - run: bun run test:api
+        working-directory: gild-site
+      # These phases are added on the stacked PRs. The presence of the suite,
+      # rather than a branch name, enables its gate on all subsequent branches.
+      - if: hashFiles('gild-site/lib/events.test.ts') != ''
+        run: bun run test:events
+        working-directory: gild-site
+      - if: hashFiles('gild-site/lib/sessions.test.ts') != ''
+        run: bun run test:sessions
+        working-directory: gild-site
+      - run: bun run test:channel:fast
+        working-directory: gild-site
+      - run: bun run test:channel:fast:revert
+        working-directory: gild-site
+      - run: bun run test:channel:web
+        working-directory: gild-site
+      - run: bun run test:channel:revert
+        working-directory: gild-site
+      - run: bun run test:channel:review:revert
+        working-directory: gild-site
+      - run: bun run test:orchestrator:revert
+        working-directory: gild-site
+      - run: bun run test:import:revert
+        working-directory: gild-site
+      - run: bun run test:import
+        working-directory: gild-site
+      - run: bun run test:privacy:web
+        working-directory: gild-site
+      # Contest status pages: unpublished pages render, one 404 document for
+      # missing/private repos and owners, no hydration errors (#63, #64, #66).
+      - run: bun run test:status-pages
+        working-directory: gild-site
+      # Page-load budget: no /api fetch on load, document server time and
+      # settled time per page, signed out and in, at 25 ms per round trip.
+      - run: bun run test:documentation:local
+        working-directory: gild-site
+      - run: bun run test:documentation:revert
+        working-directory: gild-site
+      - run: bun run test:latency
+        working-directory: gild-site
+      - run: bun run test:static
+        working-directory: gild-site
+      - run: bun run test:static:browser
+        working-directory: gild-site
+      - run: bun run test:static:revert
+        working-directory: gild-site
+      - run: bun run test:repo-shell
+        working-directory: gild-site
+      - run: bun run test:actions:pending:revert
+        working-directory: gild-site
+      - run: bun run test:sidebar:first-click
+        working-directory: gild-site
+      - run: bun run test:sidebar:first-click:revert
+        working-directory: gild-site
+      - run: bun run test:sidebar:handoff
+        working-directory: gild-site
+      - run: bun run test:sidebar:handoff:revert
+        working-directory: gild-site
+      - run: bun run test:nav:transitions
+        working-directory: gild-site
+      - run: bun run test:nav:revert
+        working-directory: gild-site
+      - run: bun run test:fragments
+        working-directory: gild-site
+      - run: bun run test:cqx:bundles
+        working-directory: gild-site
+      - run: bun run test:cqx:local
+        working-directory: gild-site
+      - run: bun run test:runners:local
+        working-directory: gild-site

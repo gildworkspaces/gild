@@ -1,0 +1,198 @@
+{
+  "base": "17de4a9",
+  "runtime": "compiled OpenNext Worker, local workerd, Chrome on Intel macOS",
+  "gates": [
+    {
+      "command": "bun run test",
+      "exit": 0,
+      "seconds": 20.7,
+      "log": ".tmp/final-gates/test.log"
+    },
+    {
+      "command": "bunx tsc --noEmit",
+      "exit": 0,
+      "seconds": 0.5,
+      "log": ".tmp/final-gates/tsc---noEmit.log"
+    },
+    {
+      "command": "bun run test:nav:transitions",
+      "exit": 0,
+      "seconds": 113.0,
+      "log": ".tmp/final-gates/test-nav-transitions.log"
+    },
+    {
+      "command": "bun run test:nav:revert",
+      "exit": 0,
+      "seconds": 77.8,
+      "log": ".tmp/final-gates/test-nav-revert.log"
+    },
+    {
+      "command": "bun run test:nav",
+      "exit": 0,
+      "seconds": 50.3,
+      "log": ".tmp/final-gates/test-nav.log"
+    },
+    {
+      "command": "bun run probe:nav:local",
+      "exit": 0,
+      "seconds": 29.1,
+      "log": ".tmp/final-gates/probe-nav-local.log"
+    },
+    {
+      "command": "bun run test:actions:logs:revert",
+      "exit": 0,
+      "seconds": 5.5,
+      "log": ".tmp/final-gates/test-actions-logs-revert.log"
+    },
+    {
+      "command": "bun run test:privacy",
+      "exit": 0,
+      "seconds": 65.4,
+      "log": ".tmp/final-gates/test-privacy.log"
+    },
+    {
+      "command": "bun run test:privacy:revert",
+      "exit": 0,
+      "seconds": 6.8,
+      "log": ".tmp/final-gates/test-privacy-revert.log"
+    },
+    {
+      "command": "bun run test:repo-list:perf",
+      "exit": 0,
+      "seconds": 13.8,
+      "log": ".tmp/final-gates/test-repo-list-perf.log"
+    },
+    {
+      "command": "bun run test:api",
+      "exit": 0,
+      "seconds": 135.6,
+      "log": ".tmp/final-gates/test-api.log"
+    },
+    {
+      "command": "bun run test:events",
+      "exit": 0,
+      "seconds": 152.3,
+      "log": ".tmp/final-gates/test-events.log"
+    },
+    {
+      "command": "bun run test:actions:perf",
+      "exit": 0,
+      "seconds": 79.9,
+      "log": ".tmp/final-gates/test-actions-perf.log"
+    },
+    {
+      "command": "bun run test:actions:perf:revert",
+      "exit": 0,
+      "seconds": 299.7,
+      "log": ".tmp/final-gates/test-actions-perf-revert.log"
+    },
+    {
+      "command": "bun run test:sessions",
+      "exit": 0,
+      "seconds": 144.1,
+      "log": ".tmp/final-gates/test-sessions.log"
+    },
+    {
+      "command": "bun run test:channel:web",
+      "exit": 0,
+      "seconds": 65.2,
+      "log": ".tmp/final-gates/test-channel-web.log"
+    },
+    {
+      "command": "bun run test:channel:revert",
+      "exit": 0,
+      "seconds": 368.2,
+      "log": ".tmp/final-gates/test-channel-revert.log"
+    },
+    {
+      "command": "bun run test:channel:review:revert",
+      "exit": 0,
+      "seconds": 684.0,
+      "log": ".tmp/final-gates/test-channel-review-revert.log"
+    },
+    {
+      "command": "bun run test:orchestrator:revert",
+      "exit": 0,
+      "seconds": 158.5,
+      "log": ".tmp/final-gates/test-orchestrator-revert.log"
+    },
+    {
+      "command": "bun run test:import:revert",
+      "exit": 0,
+      "seconds": 8.0,
+      "log": ".tmp/final-gates/test-import-revert.log"
+    },
+    {
+      "command": "bun run test:import",
+      "exit": 0,
+      "seconds": 66.2,
+      "log": ".tmp/final-gates/test-import.log"
+    },
+    {
+      "command": "bun run test:privacy:web",
+      "exit": 0,
+      "seconds": 123.1,
+      "log": ".tmp/final-gates/test-privacy-web.log"
+    },
+    {
+      "command": "bun run test:static",
+      "exit": 0,
+      "seconds": 12.5,
+      "log": ".tmp/final-gates/test-static.log"
+    },
+    {
+      "command": "bun run test:static:browser",
+      "exit": 0,
+      "seconds": 83.2,
+      "log": ".tmp/final-gates/test-static-browser.log"
+    },
+    {
+      "command": "bun run test:static:revert",
+      "exit": 0,
+      "seconds": 67.9,
+      "log": ".tmp/final-gates/test-static-revert.log"
+    },
+    {
+      "command": "bun run test:repo-shell",
+      "exit": 0,
+      "seconds": 337.0,
+      "log": ".tmp/final-gates/test-repo-shell.log"
+    },
+    {
+      "command": "bun run test:fragments",
+      "exit": 0,
+      "seconds": 64.8,
+      "log": ".tmp/final-gates/test-fragments.log"
+    },
+    {
+      "command": "bun run test:cqx:bundles",
+      "exit": 0,
+      "seconds": 11.2,
+      "log": ".tmp/final-gates/test-cqx-bundles.log"
+    },
+    {
+      "command": "bun run test:cqx:local",
+      "exit": 0,
+      "seconds": 268.2,
+      "log": ".tmp/final-gates/test-cqx-local.log"
+    },
+    {
+      "command": "bun run test:runners:local",
+      "exit": 0,
+      "seconds": 274.2,
+      "log": ".tmp/final-gates/test-runners-local.log"
+    },
+    {
+      "command": "bun run test:theme",
+      "exit": 0,
+      "seconds": 5.2,
+      "log": ".tmp/final-gates/test-theme.log"
+    },
+    {
+      "command": "bun run build:cloudflare",
+      "exit": 0,
+      "seconds": 23.8,
+      "log": ".tmp/final-gates/build-cloudflare.log"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gild-cqx-heavy",
+  "main": "cqx-heavy.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "rpc"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [],
+  "limits": { "cpu_ms": 30000 },
+  "build": { "command": "node scripts/cqx-artifacts.mjs" }
+}

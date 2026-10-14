@@ -1,0 +1,30 @@
+node_modules
+.next
+.open-next
+.wrangler
+.env*
+!.env.example
+.dev.vars
+tsconfig.tsbuildinfo
+
+.tmp/
+
+.render/
+public/gild-fragments/
+
+# celld self-host build outputs and local secrets (docs/self-host-celld.md)
+.celld/
+.celld-out/
+celld.*.json
+
+# The hosted service's private overlay (gildforge/gild-id) lands here at
+# deploy time; only the open defaults are tracked (lib/hosted/types.ts).
+lib/hosted/*
+!lib/hosted/types.ts
+!lib/hosted/metering.ts
+!lib/hosted/billing.tsx
+!lib/hosted/signin.tsx
+app/(auth)/auth/github/
+migrations/09*_hosted_*.sql
+
+migrations/0035_usage_daily.sql

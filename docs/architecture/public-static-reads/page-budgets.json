@@ -1,0 +1,317 @@
+[
+  {
+    "route": "/",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/explore",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme?tab=people",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/issues",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/issues/1",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/pulls",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/pulls/1?tab=files",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/agents",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/actions",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/actions/1",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/search",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/search",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/new",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/new/org",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/import",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/import",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/issues/new",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/acme/demo/pulls/new",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/api/search?q=fixture",
+    "cold": {
+      "do": 1,
+      "d1": 2,
+      "r2": 2,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "route": "/api/repos/acme/demo/search?q=fixture",
+    "cold": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "warm": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  }
+]

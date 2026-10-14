@@ -1,0 +1,87 @@
+{
+  "baselineCommit": "9d08414",
+  "pages": {
+    "before": {
+      "label": "before",
+      "runtime": "complete OpenNext HTML via local wrangler/workerd, D1, 15 real Git repos and local Artifacts transport",
+      "firstOwner": 654.3409920000013,
+      "owner": {
+        "medianMs": 285.40365699999893,
+        "maxMs": 421.0203470000015
+      },
+      "firstLanding": 561.4102620000012,
+      "landing": {
+        "medianMs": 159.82726200000252,
+        "maxMs": 217.83381200000076
+      },
+      "newIsolateLanding": 1012.8204639999967,
+      "firstAfterPush": 2264.0543410000028,
+      "deferredRefreshMs": 2000
+    },
+    "after": {
+      "label": "after",
+      "runtime": "complete OpenNext HTML via local wrangler/workerd, D1, 15 real Git repos and local Artifacts transport",
+      "firstOwner": 337.0164369999984,
+      "owner": {
+        "medianMs": 47.635096999998495,
+        "maxMs": 60.70401899999706
+      },
+      "firstLanding": 356.8085299999948,
+      "landing": {
+        "medianMs": 31.319988000002922,
+        "maxMs": 36.028416000001016
+      },
+      "newIsolateLanding": 253.9769249999954,
+      "firstAfterPush": 71.82812600000034,
+      "publishedPushView": 49.16823899999872,
+      "publishedTipVisible": true,
+      "deferredRefreshMs": 2000
+    }
+  },
+  "countedFixture": {
+    "before": {
+      "label": "before",
+      "firstOwner": 246,
+      "owner": {
+        "medianMs": 129,
+        "maxMs": 229,
+        "doCalls": 105,
+        "d1Calls": 90
+      },
+      "firstLanding": 155,
+      "landing": {
+        "medianMs": 47,
+        "maxMs": 49,
+        "doCalls": 42,
+        "d1Calls": 36
+      },
+      "landingNewIsolate": {
+        "ms": 224,
+        "scans": 1
+      },
+      "firstAfterPush": 164
+    },
+    "after": {
+      "label": "after",
+      "firstOwner": 194,
+      "owner": {
+        "medianMs": 9,
+        "maxMs": 79,
+        "doCalls": 0,
+        "d1Calls": 4
+      },
+      "firstLanding": 18,
+      "landing": {
+        "medianMs": 6,
+        "maxMs": 9,
+        "doCalls": 0,
+        "d1Calls": 4
+      },
+      "landingNewIsolate": {
+        "ms": 36,
+        "scans": 0
+      },
+      "firstAfterPush": 8
+    }
+  }
+}

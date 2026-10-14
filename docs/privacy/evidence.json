@@ -1,0 +1,371 @@
+{
+  "transport": {
+    "coldMs": 57.44131000000016,
+    "warmMs": 50.65782500000023,
+    "matrix": [
+      {
+        "viewer": "anonymous",
+        "paths": {
+          "page": 404,
+          "issues page": 404,
+          "PR page": 404,
+          "Glance/score": 404,
+          "health": 404,
+          "agents": 404,
+          "actions page": 404,
+          "search page": 404,
+          "API": 404,
+          "agents API": 404,
+          "private cached commit": 404,
+          "actions log": 404,
+          "git advertisement": 401,
+          "webhook": "blocked",
+          "search": "count = 0",
+          "owner list": 0,
+          "explore": 0,
+          "events": 401
+        }
+      },
+      {
+        "viewer": "outsider",
+        "paths": {
+          "page": 404,
+          "issues page": 404,
+          "PR page": 404,
+          "Glance/score": 404,
+          "health": 404,
+          "agents": 404,
+          "actions page": 404,
+          "search page": 404,
+          "API": 404,
+          "agents API": 404,
+          "private cached commit": 404,
+          "actions log": 404,
+          "git advertisement": 404,
+          "webhook": "blocked",
+          "search": "count = 0",
+          "owner list": 0,
+          "explore": 0,
+          "events": 404
+        }
+      },
+      {
+        "viewer": "reader",
+        "paths": {
+          "page": 200,
+          "issues page": 200,
+          "PR page": 200,
+          "Glance/score": 200,
+          "health": 200,
+          "agents": 200,
+          "actions page": 200,
+          "search page": 200,
+          "API": 200,
+          "agents API": 200,
+          "private cached commit": 200,
+          "actions log": 200,
+          "git advertisement": 200,
+          "webhook": "blocked",
+          "search": "count > 0",
+          "owner list": 1,
+          "explore": 0,
+          "events": 200
+        }
+      },
+      {
+        "viewer": "writer",
+        "paths": {
+          "page": 200,
+          "issues page": 200,
+          "PR page": 200,
+          "Glance/score": 200,
+          "health": 200,
+          "agents": 200,
+          "actions page": 200,
+          "search page": 200,
+          "API": 200,
+          "agents API": 200,
+          "private cached commit": 200,
+          "actions log": 200,
+          "git advertisement": 200,
+          "webhook": "blocked",
+          "search": "count > 0",
+          "owner list": 1,
+          "explore": 0,
+          "events": 200
+        }
+      },
+      {
+        "viewer": "member",
+        "paths": {
+          "page": 200,
+          "issues page": 200,
+          "PR page": 200,
+          "Glance/score": 200,
+          "health": 200,
+          "agents": 200,
+          "actions page": 200,
+          "search page": 200,
+          "API": 200,
+          "agents API": 200,
+          "private cached commit": 200,
+          "actions log": 200,
+          "git advertisement": 200,
+          "webhook": "blocked",
+          "search": "count > 0",
+          "owner list": 1,
+          "explore": 0,
+          "events": 200
+        }
+      },
+      {
+        "viewer": "acme",
+        "paths": {
+          "page": 200,
+          "issues page": 200,
+          "PR page": 200,
+          "Glance/score": 200,
+          "health": 200,
+          "agents": 200,
+          "actions page": 200,
+          "search page": 200,
+          "API": 200,
+          "agents API": 200,
+          "private cached commit": 200,
+          "actions log": 200,
+          "git advertisement": 200,
+          "webhook": "delivered",
+          "search": "count > 0",
+          "owner list": 1,
+          "explore": 0,
+          "events": 200
+        }
+      },
+      {
+        "viewer": "acme/granted",
+        "paths": {
+          "page": 200,
+          "issues page": 200,
+          "PR page": 200,
+          "Glance/score": 200,
+          "health": 200,
+          "agents": 200,
+          "actions page": 200,
+          "search page": 200,
+          "API": 200,
+          "agents API": 200,
+          "private cached commit": 200,
+          "actions log": 200,
+          "git advertisement": 200,
+          "webhook": "blocked",
+          "search": "count > 0",
+          "owner list": 1,
+          "explore": 0,
+          "events": 200
+        }
+      },
+      {
+        "viewer": "acme/ungranted",
+        "paths": {
+          "page": 404,
+          "issues page": 404,
+          "PR page": 404,
+          "Glance/score": 404,
+          "health": 404,
+          "agents": 404,
+          "actions page": 404,
+          "search page": 404,
+          "API": 404,
+          "agents API": 404,
+          "private cached commit": 404,
+          "actions log": 404,
+          "git advertisement": 404,
+          "webhook": "blocked",
+          "search": "count = 0",
+          "owner list": 0,
+          "explore": 0,
+          "events": 404
+        }
+      }
+    ],
+    "crawledRoutes": 94,
+    "crawledRepresentations": 188,
+    "credentialHelperClone": true,
+    "cloneViewerMatrix": true,
+    "ownerFenceRetry": true,
+    "webhookDelivery": true,
+    "listingFailureFence": true,
+    "directMetaPushFence": true,
+    "immediateRemoval": true,
+    "explicitPublication": true
+  },
+  "compiledWorker": {
+    "runtime": "compiled OpenNext Worker + real workerd/D1/DO/Git",
+    "matrix": [
+      {
+        "viewer": "anonymous",
+        "paths": {
+          "code": 404,
+          "/issues": 404,
+          "/pulls": 404,
+          "/score": 404,
+          "/health": 404,
+          "/agents": 404,
+          "/actions": 404,
+          "/search": 404,
+          "API": 404
+        }
+      },
+      {
+        "viewer": "outsider",
+        "paths": {
+          "code": 404,
+          "/issues": 404,
+          "/pulls": 404,
+          "/score": 404,
+          "/health": 404,
+          "/agents": 404,
+          "/actions": 404,
+          "/search": 404,
+          "API": 404
+        }
+      },
+      {
+        "viewer": "reader",
+        "paths": {
+          "code": 200,
+          "/issues": 200,
+          "/pulls": 200,
+          "/score": 200,
+          "/health": 200,
+          "/agents": 200,
+          "/actions": 200,
+          "/search": 200,
+          "API": 200
+        }
+      },
+      {
+        "viewer": "writer",
+        "paths": {
+          "code": 200,
+          "/issues": 200,
+          "/pulls": 200,
+          "/score": 200,
+          "/health": 200,
+          "/agents": 200,
+          "/actions": 200,
+          "/search": 200,
+          "API": 200
+        }
+      },
+      {
+        "viewer": "member",
+        "paths": {
+          "code": 200,
+          "/issues": 200,
+          "/pulls": 200,
+          "/score": 200,
+          "/health": 200,
+          "/agents": 200,
+          "/actions": 200,
+          "/search": 200,
+          "API": 200
+        }
+      },
+      {
+        "viewer": "avatest",
+        "paths": {
+          "code": 200,
+          "/issues": 200,
+          "/pulls": 200,
+          "/score": 200,
+          "/health": 200,
+          "/agents": 200,
+          "/actions": 200,
+          "/search": 200,
+          "API": 200
+        }
+      },
+      {
+        "viewer": "avatest/granted",
+        "paths": {
+          "code": 200,
+          "/issues": 200,
+          "/pulls": 200,
+          "/score": 200,
+          "/health": 200,
+          "/agents": 200,
+          "/actions": 200,
+          "/search": 200,
+          "API": 200
+        }
+      },
+      {
+        "viewer": "avatest/ungranted",
+        "paths": {
+          "code": 404,
+          "/issues": 404,
+          "/pulls": 404,
+          "/score": 404,
+          "/health": 404,
+          "/agents": 404,
+          "/actions": 404,
+          "/search": 404,
+          "API": 404
+        }
+      }
+    ],
+    "routes": 94,
+    "representations": 188,
+    "oldPublicHashRevoked": true,
+    "privateRunnerRegistration": true,
+    "runnerHandlesScoped": true,
+    "revokedJoinReceipt": true,
+    "requestListsFiltered": true,
+    "settingsUI": true,
+    "privateCreationUI": true,
+    "acceptDeclineUI": true,
+    "revocation": true
+  },
+  "listing": {
+    "label": "after",
+    "firstOwner": 261,
+    "owner": {
+      "medianMs": 13,
+      "maxMs": 51,
+      "doCalls": 0,
+      "d1Calls": 4
+    },
+    "firstLanding": 50,
+    "landing": {
+      "medianMs": 10,
+      "maxMs": 14,
+      "doCalls": 0,
+      "d1Calls": 4
+    },
+    "landingNewIsolate": {
+      "ms": 73,
+      "scans": 0
+    },
+    "firstAfterPush": 12
+  },
+  "gates": {
+    "unitTests": 217,
+    "typecheck": true,
+    "api": true,
+    "events": true,
+    "sessions": true,
+    "buildCloudflare": true,
+    "fragments": true,
+    "cqxBundles": true,
+    "cqxLocal": true,
+    "runnersLocal": true,
+    "listingPerf": true,
+    "theme": true,
+    "revertPaths": [
+      "page",
+      "listing",
+      "event"
+    ]
+  }
+}

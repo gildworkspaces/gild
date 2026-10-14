@@ -1,0 +1,157 @@
+{
+  "runtime": "wrangler dev multi-config: main OpenNext + gild-cqx-heavy",
+  "rows": [
+    {
+      "repo": "avatest/cJSON",
+      "sourceCommit": "f8737687de00666c5895d6936c73f461b7c4c378",
+      "cacheKey": "avatest/cJSON@130d3687dae9a9e9288abb1ec524daa1f89e9053#cqx-0.1.25:r3",
+      "firstScorePageMs": 6704,
+      "firstViewAttempts": 1,
+      "cachedScorePageMs": 1545,
+      "lines": 1485,
+      "languages": [],
+      "findings": [
+        {
+          "language": "c",
+          "rule": "oversized-files",
+          "findings": 1
+        },
+        {
+          "language": "c",
+          "rule": "unsafe-buffer-calls",
+          "findings": 6
+        }
+      ]
+    },
+    {
+      "repo": "avatest/lua",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "cacheKey": "avatest/lua@68fcaef6a950717d0039241f269e92a7a8183ec8#cqx-0.1.25:r3",
+      "firstScorePageMs": 12134,
+      "firstViewAttempts": 2,
+      "cachedScorePageMs": 72,
+      "lines": 2744,
+      "languages": [],
+      "findings": []
+    },
+    {
+      "repo": "avatest/tinyxml2",
+      "sourceCommit": "27796b50dad62a5e0fd7a1619b99cb4040c56087",
+      "cacheKey": "avatest/tinyxml2@e4aa42e1d34bc4f417a9ea19167cc18976b3c9a0#cqx-0.1.25:r3",
+      "firstScorePageMs": 1803,
+      "firstViewAttempts": 1,
+      "cachedScorePageMs": 89,
+      "lines": 2010,
+      "languages": [
+        "cpp",
+        "python",
+        "typescript"
+      ],
+      "findings": [
+        {
+          "language": "typescript",
+          "rule": "dynamic-code",
+          "findings": 1
+        },
+        {
+          "language": "typescript",
+          "rule": "swallowed-errors",
+          "findings": 6
+        }
+      ]
+    },
+    {
+      "repo": "avatest/Polly",
+      "sourceCommit": "1ede2b7874f71da6e22dd961bc654dfffa340cc0",
+      "cacheKey": "avatest/Polly@8e1b23a7f38a9300e351e1b3aa28b95def330ba9#cqx-0.1.25:r3",
+      "firstScorePageMs": 16139,
+      "firstViewAttempts": 3,
+      "cachedScorePageMs": 72,
+      "lines": 41676,
+      "languages": [
+        "csharp",
+        "typescript"
+      ],
+      "findings": [
+        {
+          "language": "csharp",
+          "rule": "duplicated-bodies",
+          "findings": 67
+        },
+        {
+          "language": "csharp",
+          "rule": "oversized-files",
+          "findings": 3
+        },
+        {
+          "language": "csharp",
+          "rule": "undocumented-suppressions",
+          "findings": 1
+        }
+      ]
+    },
+    {
+      "repo": "avatest/jsoup",
+      "sourceCommit": "a9c11b6791a8244a18f8983d73bce2c2d9349534",
+      "cacheKey": "avatest/jsoup@d720c4a29012557425a7ca414302d6cf66cb2ce3#cqx-0.1.25:r3",
+      "firstScorePageMs": 12795,
+      "firstViewAttempts": 2,
+      "cachedScorePageMs": 82,
+      "lines": 30162,
+      "languages": [],
+      "findings": [
+        {
+          "language": "java",
+          "rule": "oversized-files",
+          "findings": 8
+        },
+        {
+          "language": "java",
+          "rule": "swallowed-errors",
+          "findings": 3
+        },
+        {
+          "language": "java",
+          "rule": "undocumented-suppressions",
+          "findings": 1
+        }
+      ]
+    },
+    {
+      "repo": "avatest/moshi",
+      "sourceCommit": "6d0e3f046da321cbf37440e41870a75888a487c3",
+      "cacheKey": "avatest/moshi@2937c41818177eac32acd2305175d50366a9fc75#cqx-0.1.25:r3",
+      "firstScorePageMs": 3262,
+      "firstViewAttempts": 1,
+      "cachedScorePageMs": 73,
+      "lines": 15146,
+      "languages": [
+        "java",
+        "kotlin"
+      ],
+      "findings": [
+        {
+          "language": "java",
+          "rule": "duplicated-bodies",
+          "findings": 1
+        },
+        {
+          "language": "kotlin",
+          "rule": "oversized-files",
+          "findings": 1
+        },
+        {
+          "language": "kotlin",
+          "rule": "swallowed-errors",
+          "findings": 1
+        },
+        {
+          "language": "kotlin",
+          "rule": "undocumented-suppressions",
+          "findings": 22
+        }
+      ]
+    }
+  ],
+  "screenshots": 20
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "name": "unit",
+    "code": 0,
+    "signal": null,
+    "ms": 8764
+  },
+  {
+    "name": "types",
+    "code": 0,
+    "signal": null,
+    "ms": 813
+  },
+  {
+    "name": "privacy",
+    "code": 0,
+    "signal": null,
+    "ms": 29940
+  },
+  {
+    "name": "privacy-revert",
+    "code": 0,
+    "signal": null,
+    "ms": 2614
+  },
+  {
+    "name": "repo-list-perf",
+    "code": 0,
+    "signal": null,
+    "ms": 8693
+  },
+  {
+    "name": "api",
+    "code": 0,
+    "signal": null,
+    "ms": 72092
+  },
+  {
+    "name": "events",
+    "code": 0,
+    "signal": null,
+    "ms": 59114
+  },
+  {
+    "name": "sessions",
+    "code": 0,
+    "signal": null,
+    "ms": 59504
+  },
+  {
+    "name": "theme",
+    "code": 0,
+    "signal": null,
+    "ms": 5664
+  },
+  {
+    "name": "import-revert",
+    "code": 0,
+    "signal": null,
+    "ms": 4160
+  },
+  {
+    "name": "import",
+    "code": 0,
+    "signal": null,
+    "ms": 59131
+  },
+  {
+    "name": "privacy-web",
+    "code": 0,
+    "signal": null,
+    "ms": 101330
+  },
+  {
+    "name": "fragments",
+    "code": 0,
+    "signal": null,
+    "ms": 19484,
+    "initialCode": 1,
+    "finalLog": "final-fragments-retry.log",
+    "note": "Fixed the version-aware private-source helper to use the persistent router script after a fragment swap."
+  },
+  {
+    "name": "cqx-bundles",
+    "code": 0,
+    "signal": null,
+    "ms": 11675
+  },
+  {
+    "name": "cqx-local",
+    "code": 0,
+    "signal": null,
+    "ms": 54445,
+    "initialCode": 1,
+    "finalLog": "final-cqx-local-retry.log",
+    "note": "Rerun passed after a local workerd connection loss."
+  },
+  {
+    "name": "runners-local",
+    "code": 0,
+    "signal": null,
+    "ms": 92549,
+    "initialCode": 1,
+    "finalLog": "final-runners-local-retry.log",
+    "note": "Pinned CLI and prebuilt renderer; bounded documented indexing retries with the same PR idempotency key; scoped org-event reads exclude unrelated cold scaling repositories."
+  },
+  {
+    "name": "companion CLI frozen install/build",
+    "code": 0,
+    "revision": "37e7d8ef1e6eed2a5aa03fb2cac5927762e71bf7"
+  },
+  {
+    "name": "site frozen install",
+    "code": 0
+  },
+  {
+    "name": "build:cloudflare",
+    "code": 0
+  },
+  {
+    "name": "test:repo-shell",
+    "code": 0,
+    "entries": 53,
+    "maxCLS": 0
+  },
+  {
+    "name": "test:repo-shell:revert",
+    "code": 0,
+    "cases": 6
+  },
+  {
+    "name": "Next-to-Next back",
+    "code": 0,
+    "beforeY": 100,
+    "afterY": 100
+  }
+]

@@ -1,0 +1,57 @@
+$ node scripts/nav-gate.mjs --ttfb
+(node:41615) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Volumes/Projects/codex/gild-site-nav/lib/api/contract.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Volumes/Projects/codex/gild-site-nav/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+### Repository tab navigation (local, darwin)
+
+Budgets: no full reload · feedback < 100 ms · settled < 600 ms
+
+| hop | document reload | feedback ms | settled ms |
+|---|---|---|---|
+| code → issues | none | 52 | 80 |
+| issues → pulls | none | 31 | 63 |
+| pulls → actions | none | 25 | 52 |
+| actions → agents | none | 17 | 44 |
+| agents → code | none | 17 | 33 |
+| code → issues | none | 24 | 51 |
+
+| tab (direct GET, median of 15) | document TTFB ms | document server-timing ms | RSC TTFB ms | RSC server-timing ms |
+|---|---|---|---|---|
+| code | 6 (200) | 2 | 27 (409) | 20 |
+| issues | 6 (200) | 2 | 7 (409) | 1 |
+| pulls | 6 (200) | 2 | 7 (409) | 1 |
+| actions | 7 (200) | 3 | 7 (409) | 2 |
+| agents | 6 (200) | 2 | 7 (409) | 2 |
+| private code | 65 (200) | 57 | 47 (409) | 39 |
+| private issues | 119 (200) | 115 | 73 (200) | 29 |
+| private pulls | 76 (200) | 70 | 71 (200) | 29 |
+| private actions | 76 (200) | 72 | 73 (200) | 28 |
+| private agents | 74 (200) | 69 | 71 (200) | 29 |
+
+Worker stages >= 1 ms (server-timing `w-*`, median sample):
+
+- code document: w-public-browse 2.0
+- code RSC: w-privacy 11.0, w-app 9.0
+- issues document: w-published-page 2.0
+- issues RSC: w-published-page 1.0
+- pulls document: w-published-page 2.0
+- pulls RSC: w-published-page 1.0
+- actions document: w-static-html 1.0, w-published-page 2.0
+- actions RSC: w-retained-asset 1.0, w-published-page 1.0
+- agents document: w-published-page 2.0
+- agents RSC: w-published-page 2.0
+- private code document: w-public-browse 3.0, w-privacy 12.0, w-app 42.0
+- private code RSC: w-viewer 1.0, w-privacy 29.0, w-app 9.0
+- private issues document: w-published-page 3.0, w-static-route 2.0, w-privacy 13.0, w-app 97.0
+- private issues RSC: w-published-page 2.0, w-static-route 2.0, w-privacy 14.0, w-app 11.0
+- private pulls document: w-published-page 2.0, w-static-route 2.0, w-privacy 14.0, w-app 52.0
+- private pulls RSC: w-published-page 3.0, w-static-route 2.0, w-privacy 13.0, w-app 11.0
+- private actions document: w-published-page 2.0, w-static-route 2.0, w-privacy 13.0, w-app 55.0
+- private actions RSC: w-published-page 2.0, w-static-route 2.0, w-privacy 13.0, w-app 11.0
+- private agents document: w-published-page 2.0, w-static-route 3.0, w-privacy 13.0, w-app 51.0
+- private agents RSC: w-published-page 2.0, w-static-route 3.0, w-privacy 13.0, w-app 11.0
+
+**PASS**
+
+-codex

@@ -1,0 +1,50 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gild-render",
+  "main": ".render/worker.mjs",
+  "observability": { "logs": { "enabled": true, "head_sampling_rate": 1 }, "traces": { "enabled": true, "head_sampling_rate": 1 } },
+  "build": {
+    "command": "node scripts/render-build.mjs"
+  },
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [],
+  "limits": {
+    "cpu_ms": 30000
+  },
+  "r2_buckets": [
+    {
+      "binding": "FRAGMENTS",
+      "bucket_name": "gild-fragments"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "REPO_INDEX",
+        "class_name": "RepoIndex",
+        "script_name": "gild-site"
+      }
+    ]
+  },
+  "queues": {
+    "producers": [
+      {
+        "binding": "RENDER_QUEUE",
+        "queue": "gild-render"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "gild-render",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 12
+      }
+    ]
+  }
+}

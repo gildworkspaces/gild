@@ -1,0 +1,35 @@
+{
+  "issue": "gildforge/gild-site#44",
+  "productionFinding": {
+    "runner": "bugsy-owner",
+    "CLI": "0.5.4",
+    "installedNode": "v26.10.0",
+    "latest": "Node latest is required on this machine",
+    "24": "Node 24 is required on this machine",
+    "upload": "existing incremental step log route contains the failure text",
+    "jobURL": "legacy handler ignored jobs/job/logs suffix and returned run metadata"
+  },
+  "changes": [
+    "job log URL returns retained masked chunks",
+    "shared pagination for legacy and canonical log routes",
+    "run page links to job logs",
+    "companion CLI pinned to 1efd7876c70b453faf77dd7994b09fe3e0ef1aba"
+  ],
+  "regression": {
+    "retainedChunks": 130,
+    "revertedRoute": "assertion fails",
+    "revertedPagination": "assertion fails",
+    "browser": "failed step automatically open; displayed text and linked API text asserted; dark/light and 400px existing flows passed",
+    "R2": "read back after DO logs removed",
+    "firstJobLogMs": 16.2,
+    "repeatedJobLogMs": 14.7
+  },
+  "listingPerformance": {
+    "IntelBaselineColdMs": 351,
+    "IntelBaselineWarmMedianMs": 8,
+    "LinuxColdMs": 178,
+    "LinuxWarmMedianMs": 9,
+    "LinuxGate": "exit 0; all budget and privacy assertions"
+  },
+  "rollout": "Needs CLI release by Ava, new CLI installed and runner restart on bugsy/demon; site change reviewed and deployed by Ava; no rollout performed"
+}

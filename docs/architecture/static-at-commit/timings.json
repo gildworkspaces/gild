@@ -1,0 +1,120 @@
+[
+  {
+    "path": "/f/v1/manifest/4444444444444444444444444444444444444444",
+    "ms": 4.302707000000282,
+    "serverMs": 2,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=0.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=2.00"
+  },
+  {
+    "path": "/f/v1/blob/1000000000000000000000000000000000000000.typescript.code",
+    "ms": 2.6127849999998034,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/tree/7777777777777777777777777777777777777777",
+    "ms": 2.311271999999917,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/home/1111111111111111111111111111111111111111.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa11.774645ff2fe163b4014d4307",
+    "ms": 1.9519199999999728,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/commit/1111111111111111111111111111111111111111",
+    "ms": 2.233096999999816,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/score/1111111111111111111111111111111111111111.cqx-0.1.26.3a334d57d0ca427a2aabfa2a",
+    "ms": 2.364176999999927,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=0.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/glance/root.1111111111111111111111111111111111111111",
+    "ms": 3.1656600000001163,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/tree/7777777777777777777777777777777777777777 (warm edge)",
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "timing": "cache;desc=\"Cloudflare edge hit\", r2;dur=0, render;dur=0, do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/f/v1/blob/1000000000000000000000000000000000000000.typescript.code",
+    "ms": 2.082018000000062,
+    "serverMs": 1,
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    },
+    "timing": "r2;dur=1.00, render;dur=0;desc=\"stored HTML\", do;dur=0, d1;dur=0, total;dur=1.00"
+  },
+  {
+    "path": "/acme/demo?path=src/file0.ts",
+    "timing": "index;dur=4.00;desc=\"indexed pointer\", refs;dur=0;desc=\"in pointer\", snapshot;dur=3.00;desc=\"R2 parallel fragments\", file;dur=0;desc=\"included in snapshot\", score;dur=0;desc=\"stored HTML\", render;dur=0;desc=\"stitch only\", total;dur=8.00",
+    "serverMs": 8,
+    "calls": {
+      "do": 1,
+      "d1": 2,
+      "r2": 3,
+      "render": 0
+    }
+  }
+]

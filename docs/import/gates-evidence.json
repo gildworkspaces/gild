@@ -1,0 +1,77 @@
+[
+  {
+    "command": "bun install --frozen-lockfile",
+    "exit": 0,
+    "elapsed_ms": 242
+  },
+  {
+    "command": "bun run test",
+    "exit": 0,
+    "elapsed_ms": 7945
+  },
+  {
+    "command": "bunx tsc --noEmit",
+    "exit": 0,
+    "elapsed_ms": 1171
+  },
+  {
+    "command": "bun run test:privacy",
+    "exit": 0,
+    "elapsed_ms": 25887
+  },
+  {
+    "command": "bun run test:privacy:revert",
+    "exit": 0,
+    "elapsed_ms": 2459
+  },
+  {
+    "command": "bun run test:repo-list:perf",
+    "exit": 0,
+    "elapsed_ms": 6596
+  },
+  {
+    "command": "bun run test:api",
+    "exit": 0,
+    "elapsed_ms": 66006
+  },
+  {
+    "command": "bun run test:events",
+    "exit": 0,
+    "elapsed_ms": 53251
+  },
+  {
+    "command": "bun run test:sessions",
+    "exit": 0,
+    "elapsed_ms": 48428
+  },
+  {
+    "command": "bun run test:privacy:web",
+    "exit": 0,
+    "elapsed_ms": 46451
+  },
+  {
+    "command": "bun run test:fragments",
+    "exit": 0,
+    "elapsed_ms": 14486
+  },
+  {
+    "command": "bun run test:cqx:bundles",
+    "exit": 0,
+    "elapsed_ms": 9683
+  },
+  {
+    "command": "bun run test:cqx:local",
+    "exit": 0,
+    "elapsed_ms": 259022
+  },
+  {
+    "command": "bun run test:runners:local",
+    "exit": 0,
+    "elapsed_ms": 318687
+  },
+  {
+    "command": "bun run test:theme",
+    "exit": 0,
+    "elapsed_ms": 5021
+  }
+]

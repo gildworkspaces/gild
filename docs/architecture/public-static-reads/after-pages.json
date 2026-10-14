@@ -1,0 +1,2460 @@
+[
+  {
+    "path": "/",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 186.89999997615814,
+    "fcpMs": 352,
+    "loadMs": 469.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540895370.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.899999976158142,
+    "fcpMs": 76,
+    "loadMs": 29.799999952316284,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540895944,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/explore",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.800000011920929,
+    "fcpMs": 104,
+    "loadMs": 123.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540896269.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/explore",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.799999952316284,
+    "fcpMs": 56,
+    "loadMs": 27.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540896487.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/avatest",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 12.5,
+    "fcpMs": 104,
+    "loadMs": 122.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540896791.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/avatest",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.700000047683716,
+    "fcpMs": 52,
+    "loadMs": 27.899999976158142,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540897010.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 12.400000035762787,
+    "fcpMs": 104,
+    "loadMs": 123.89999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540897325.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.5,
+    "fcpMs": 44,
+    "loadMs": 27.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540897548.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest?tab=people",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.5,
+    "fcpMs": 96,
+    "loadMs": 121.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540897867.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest?tab=people",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.5,
+    "fcpMs": 60,
+    "loadMs": 28,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540898084.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest?tab=repositories",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.600000023841858,
+    "fcpMs": 100,
+    "loadMs": 119.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540898398.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest?tab=repositories",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.399999976158142,
+    "fcpMs": 52,
+    "loadMs": 28.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540898614.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 13.699999988079071,
+    "fcpMs": 108,
+    "loadMs": 79.90000003576279,
+    "bundleReadyMs": 148.30000001192093,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540898929.1,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/425d9108f420849b3d69a19a5e6a9f186072ce62",
+        "startMs": 119.448974609375,
+        "durationMs": 13.174,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1233,
+        "responseHeadersSize": 427
+      }
+    ],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 3,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.300000011920929,
+    "fcpMs": 40,
+    "loadMs": 27.899999976158142,
+    "bundleReadyMs": 56.80000001192093,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540899093.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.699999988079071,
+    "fcpMs": 116,
+    "loadMs": 136.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540899373.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.5,
+    "fcpMs": 60,
+    "loadMs": 28.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540899606,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues/1",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.600000023841858,
+    "fcpMs": 100,
+    "loadMs": 123.40000003576279,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540899920.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues/1",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.899999976158142,
+    "fcpMs": 56,
+    "loadMs": 31.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540900130.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.100000023841858,
+    "fcpMs": 108,
+    "loadMs": 130.60000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540900456.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.400000035762787,
+    "fcpMs": 52,
+    "loadMs": 28.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540900678.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.5,
+    "fcpMs": 96,
+    "loadMs": 122.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540900991.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 4.899999976158142,
+    "fcpMs": 52,
+    "loadMs": 29.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540901205.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2?tab=files",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.399999976158142,
+    "fcpMs": 108,
+    "loadMs": 129.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540901524.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2?tab=files",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.599999964237213,
+    "fcpMs": 52,
+    "loadMs": 28.799999952316284,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540901748.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2?tab=glance",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.599999964237213,
+    "fcpMs": 112,
+    "loadMs": 125.60000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540902076.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/2?tab=glance",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 7.599999964237213,
+    "fcpMs": 60,
+    "loadMs": 31.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540902292.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/agents",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.399999976158142,
+    "fcpMs": 100,
+    "loadMs": 119.90000003576279,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540902623.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/agents",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.199999988079071,
+    "fcpMs": 56,
+    "loadMs": 28.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540902834.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/actions",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.199999988079071,
+    "fcpMs": 108,
+    "loadMs": 129.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540903153.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/actions",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.299999952316284,
+    "fcpMs": 52,
+    "loadMs": 28.599999964237213,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540903375.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/actions/1",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.699999988079071,
+    "fcpMs": 100,
+    "loadMs": 123.09999996423721,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540903687.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/actions/1",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 7.299999952316284,
+    "fcpMs": 56,
+    "loadMs": 29,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540903913.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/score",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 14.800000011920929,
+    "fcpMs": 104,
+    "loadMs": 51.89999997615814,
+    "bundleReadyMs": 157.39999997615814,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540904259.1,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/425d9108f420849b3d69a19a5e6a9f186072ce62",
+        "startMs": 131.578125,
+        "durationMs": 10.684,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1256,
+        "responseHeadersSize": 512
+      }
+    ],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 4,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/score",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.900000035762787,
+    "fcpMs": 56,
+    "loadMs": 21.5,
+    "bundleReadyMs": 57.80000001192093,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540904440.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/health",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 7.699999988079071,
+    "fcpMs": 92,
+    "loadMs": 80,
+    "bundleReadyMs": 135.69999998807907,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540904722,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/425d9108f420849b3d69a19a5e6a9f186072ce62",
+        "startMs": 113.454833984375,
+        "durationMs": 6.723,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1256,
+        "responseHeadersSize": 512
+      }
+    ],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/health",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.199999988079071,
+    "fcpMs": 52,
+    "loadMs": 26.19999998807907,
+    "bundleReadyMs": 63.5,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540904886.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/commit/22f5739f66a858409987b50bb32e15d93a79c7bb",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 30.80000001192093,
+    "fcpMs": 128,
+    "loadMs": 104.30000001192093,
+    "bundleReadyMs": 843.5,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540905255.4,
+    "bundles": [
+      {
+        "path": "/f/v3/bundle/425d9108f420849b3d69a19a5e6a9f186072ce62",
+        "startMs": 228.60302734375,
+        "durationMs": 600.52,
+        "requestBodySize": 0,
+        "requestHeadersSize": 546,
+        "responseBodySize": 1256,
+        "responseHeadersSize": 512
+      }
+    ],
+    "calls": {
+      "do": 1,
+      "d1": 0,
+      "r2": 4,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/commit/22f5739f66a858409987b50bb32e15d93a79c7bb",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 15.899999976158142,
+    "fcpMs": 60,
+    "loadMs": 41.60000002384186,
+    "bundleReadyMs": 80.40000003576279,
+    "sourceReady": "425d9108f420849b3d69a19a5e6a9f186072ce62",
+    "sourceError": null,
+    "timeOrigin": 1791540906453.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/search?q=fixture",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.700000047683716,
+    "fcpMs": 132,
+    "loadMs": 120.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540906771.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/search?q=fixture",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.900000035762787,
+    "fcpMs": 52,
+    "loadMs": 31.700000047683716,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540907064.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/search?q=fixture",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.800000011920929,
+    "fcpMs": 96,
+    "loadMs": 117,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540907372.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/search?q=fixture",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.100000023841858,
+    "fcpMs": 44,
+    "loadMs": 34.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540907721.4,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.400000035762787,
+    "fcpMs": 84,
+    "loadMs": 115.79999995231628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540908040.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 41,
+    "fcpMs": 80,
+    "loadMs": 67.09999996423721,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540908244.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/new/org",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.699999988079071,
+    "fcpMs": 76,
+    "loadMs": 111.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540908585.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/new/org",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.800000011920929,
+    "fcpMs": 44,
+    "loadMs": 31.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540908786,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/import",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 7.899999976158142,
+    "fcpMs": 128,
+    "loadMs": 116.59999996423721,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540909095.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/import",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 9.100000023841858,
+    "fcpMs": 64,
+    "loadMs": 36,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540909302.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/import",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.5,
+    "fcpMs": 84,
+    "loadMs": 107.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540909621.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/import",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.300000011920929,
+    "fcpMs": 40,
+    "loadMs": 28.099999964237213,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540909848.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 18.399999976158142,
+    "fcpMs": 124,
+    "loadMs": 144.4000000357628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540910194.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/issues/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.699999988079071,
+    "fcpMs": 52,
+    "loadMs": 37.10000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540910432.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 19.30000001192093,
+    "fcpMs": 108,
+    "loadMs": 130.60000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540910785.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 1,
+      "render": 0
+    }
+  },
+  {
+    "path": "/settingstest/demo/pulls/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.5,
+    "fcpMs": 52,
+    "loadMs": 28.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540911006.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/docs/api",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 174.80000001192093,
+    "fcpMs": 392,
+    "loadMs": 305.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540911316.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/docs/api",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 3.800000011920929,
+    "fcpMs": 92,
+    "loadMs": 40.10000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540911774.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/docs/api/sessions",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 68.19999998807907,
+    "fcpMs": 216,
+    "loadMs": 155.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540912123.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/docs/api/sessions",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 4.399999976158142,
+    "fcpMs": 60,
+    "loadMs": 27.100000023841858,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540912396.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/auth/device",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 76.89999997615814,
+    "fcpMs": 128,
+    "loadMs": 162,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540912714.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/auth/device",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 16.200000047683716,
+    "fcpMs": 56,
+    "loadMs": 38.60000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540912983.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/auth/claim",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 338,
+    "fcpMs": 380,
+    "loadMs": 440.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540913326.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/auth/claim",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 45.80000001192093,
+    "fcpMs": 80,
+    "loadMs": 68.70000004768372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540913873.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/dashboard",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 262.0999999642372,
+    "fcpMs": 356,
+    "loadMs": 367.4000000357628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540915246.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 14,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/dashboard",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 171.4000000357628,
+    "fcpMs": 212,
+    "loadMs": 194.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540915713.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 14,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/profile",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 112.60000002384186,
+    "fcpMs": 208,
+    "loadMs": 268,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540916221.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/profile",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 106.89999997615814,
+    "fcpMs": 156,
+    "loadMs": 133.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540916611.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/tokens",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 100.60000002384186,
+    "fcpMs": 184,
+    "loadMs": 247.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540917067.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/tokens",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 108.89999997615814,
+    "fcpMs": 152,
+    "loadMs": 132.60000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540917415.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/agents",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 140.89999997615814,
+    "fcpMs": 220,
+    "loadMs": 296.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540917850,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 10,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/agents",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 131.69999998807907,
+    "fcpMs": 192,
+    "loadMs": 156.4000000357628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540918260.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 10,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/keys",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 108.69999998807907,
+    "fcpMs": 204,
+    "loadMs": 261,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540918717.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/keys",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 42.30000001192093,
+    "fcpMs": 88,
+    "loadMs": 70.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540919065.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/runners",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 47.200000047683716,
+    "fcpMs": 156,
+    "loadMs": 176.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540919414.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/runners",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 42.5,
+    "fcpMs": 92,
+    "loadMs": 72.10000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540919712.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.800000011920929,
+    "fcpMs": 80,
+    "loadMs": 115.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540920075.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6,
+    "fcpMs": 44,
+    "loadMs": 31.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540920278.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/new/org",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 10.300000011920929,
+    "fcpMs": 76,
+    "loadMs": 113.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540920593.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/new/org",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.100000023841858,
+    "fcpMs": 56,
+    "loadMs": 33.10000002384186,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540920797.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/import",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 7.5,
+    "fcpMs": 80,
+    "loadMs": 110.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540921139.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/import",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 9.400000035762787,
+    "fcpMs": 52,
+    "loadMs": 36.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540921343.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/issues/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 11.5,
+    "fcpMs": 96,
+    "loadMs": 119.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540921668.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/issues/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.700000047683716,
+    "fcpMs": 48,
+    "loadMs": 32.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540921881.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/pulls/new",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 9.600000023841858,
+    "fcpMs": 108,
+    "loadMs": 127.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540922196.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 1,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/pulls/new",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.399999976158142,
+    "fcpMs": 52,
+    "loadMs": 28.600000023841858,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540922419.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/general",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 129.19999998807907,
+    "fcpMs": 212,
+    "loadMs": 233.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540922774.3,
+    "bundles": [],
+    "calls": {
+      "do": 7,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/general",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 108.30000001192093,
+    "fcpMs": 168,
+    "loadMs": 135.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540923150.1,
+    "bundles": [],
+    "calls": {
+      "do": 7,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/webhooks",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 198.80000001192093,
+    "fcpMs": 272,
+    "loadMs": 295.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540923605.8,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/webhooks",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 96.10000002384186,
+    "fcpMs": 152,
+    "loadMs": 130.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540924061.2,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/general",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 71,
+    "fcpMs": 156,
+    "loadMs": 181.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540924510.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 32,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/general",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 115.5,
+    "fcpMs": 172,
+    "loadMs": 140.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540924780.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 32,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 39.89999997615814,
+    "fcpMs": 96,
+    "loadMs": 91.79999995231628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540925407,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 10,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 46.89999997615814,
+    "fcpMs": 96,
+    "loadMs": 69.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540925657.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 10,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/keys",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 40.5,
+    "fcpMs": 112,
+    "loadMs": 99.40000003576279,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540926187.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 4,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/keys",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 39.30000001192093,
+    "fcpMs": 76,
+    "loadMs": 64.70000004768372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540926425.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 4,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/runners",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 41.09999996423721,
+    "fcpMs": 132,
+    "loadMs": 123.89999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540926956.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 4,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/runners",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 40.799999952316284,
+    "fcpMs": 80,
+    "loadMs": 67.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540927218.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 4,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/organizations",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 51.09999996423721,
+    "fcpMs": 128,
+    "loadMs": 165.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540927523.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 22,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/organizations",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 47.90000003576279,
+    "fcpMs": 100,
+    "loadMs": 76.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540927781.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 22,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/agents",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 68.69999998807907,
+    "fcpMs": 180,
+    "loadMs": 179.19999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540928133.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/agents",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 41.30000001192093,
+    "fcpMs": 96,
+    "loadMs": 71.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540928399.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 17,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/invitations",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 41.30000001192093,
+    "fcpMs": 112,
+    "loadMs": 148.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540928747.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/invitations",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 41.09999996423721,
+    "fcpMs": 84,
+    "loadMs": 68.69999998807907,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540928987.7,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 16,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/runner-groups",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 53.30000001192093,
+    "fcpMs": 124,
+    "loadMs": 156.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540929330.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 21,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settings/runner-groups",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 69.59999996423721,
+    "fcpMs": 124,
+    "loadMs": 97.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540929614.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 21,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 154.80000001192093,
+    "fcpMs": 212,
+    "loadMs": 191,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540930242.7,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 41,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 139.30000001192093,
+    "fcpMs": 192,
+    "loadMs": 162,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540930729.8,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 41,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/access",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 113.80000001192093,
+    "fcpMs": 180,
+    "loadMs": 210.5999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540931211.7,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 54,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/access",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 111.79999995231628,
+    "fcpMs": 164,
+    "loadMs": 141.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540931559.7,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 54,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/actions",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 208.10000002384186,
+    "fcpMs": 304,
+    "loadMs": 336.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540932024.4,
+    "bundles": [],
+    "calls": {
+      "do": 8,
+      "d1": 56,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/actions",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 149.19999998807907,
+    "fcpMs": 224,
+    "loadMs": 176.4000000357628,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540932525.1,
+    "bundles": [],
+    "calls": {
+      "do": 8,
+      "d1": 56,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/runners",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 108.90000003576279,
+    "fcpMs": 212,
+    "loadMs": 233.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540933014.3,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/settingstest/demo/settings/runners",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 95.29999995231628,
+    "fcpMs": 152,
+    "loadMs": 127,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540933404.5,
+    "bundles": [],
+    "calls": {
+      "do": 6,
+      "d1": 51,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 59.30000001192093,
+    "fcpMs": 120,
+    "loadMs": 94.40000003576279,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540934089.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 19,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 59.60000002384186,
+    "fcpMs": 100,
+    "loadMs": 82.70000004768372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540934377.2,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 19,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/members",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 72.29999995231628,
+    "fcpMs": 156,
+    "loadMs": 179.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540934761.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 37,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/members",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 206,
+    "fcpMs": 256,
+    "loadMs": 230.89999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540935030.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 37,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/webhooks",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 63.39999997615814,
+    "fcpMs": 196,
+    "loadMs": 217.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540935544.3,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 29,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/webhooks",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 56.69999998807907,
+    "fcpMs": 104,
+    "loadMs": 81.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540935852.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 29,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/runners",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 62.69999998807907,
+    "fcpMs": 160,
+    "loadMs": 193.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540936225.5,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 30,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/runners",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 56.200000047683716,
+    "fcpMs": 104,
+    "loadMs": 86,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540936514.8,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 30,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/runner-groups",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 80.39999997615814,
+    "fcpMs": 172,
+    "loadMs": 189.5,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540936887.1,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 40,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/orgs/settingstest/settings/runner-groups",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 67.89999997615814,
+    "fcpMs": 112,
+    "loadMs": 96.39999997615814,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540937179.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 40,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/agents/approve/ae56915e9a7d41cca810",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 40.19999998807907,
+    "fcpMs": 100,
+    "loadMs": 134.0999999642372,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540937553.9,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 13,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  },
+  {
+    "path": "/agents/approve/ae56915e9a7d41cca810",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 36.69999998807907,
+    "fcpMs": 88,
+    "loadMs": 60.40000003576279,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": null,
+    "timeOrigin": 1791540937775.6,
+    "bundles": [],
+    "calls": {
+      "do": 0,
+      "d1": 13,
+      "r2": 0,
+      "render": 0
+    },
+    "viewer": "avatest"
+  }
+]

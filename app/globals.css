@@ -1,0 +1,332 @@
+/* Palette from the landing design (canvas "gild landing options", option A).
+   Gold because gild is gold leaf; neutrals lean warm toward it. Dark is the
+   default (ThemeScript); light is the mapped set from the light-mode boards. */
+:root {
+  color-scheme: light;
+  --bg: #fafaf8;
+  --bg-soft: #f3f2ee;
+  --surface: #ffffff;
+  --ink: #17181b;
+  --ink-soft: #4a4d55;
+  --ink-dim: #62656c;
+  --ink-faint: #71747a;
+  --rule: #dedbd4;
+  --rule-soft: #e6e4de;
+  --accent: #9a6b0c;
+  --accent-hover: #7a5408;
+  --accent-ink: #fafaf8;
+  --panel: #f3f2ee;
+  --glow: rgba(154, 107, 12, 0.08);
+  --lane-1: #9a6b0c;
+  --lane-2: #2f6fd6;
+  --lane-3: #8a4fc4;
+  --lane-4: #17181b;
+  --ok: #2e8a3a;
+  --bad: #c2463b;
+  /* Glance's heat colour: Cloudflare orange, in both themes. */
+  --heat-hot: #f38020;
+  --heat-ink: #17181b;
+  /* Hover cards stand apart from what they sit on: medium grey in light mode. */
+  --tip-bg: #6b6d73;
+  --tip-ink: #ffffff;
+  --tip-dim: #e4e5e8;
+  --tip-add: #c8f7c1;
+  --tip-del: #ffd3cd;
+  --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b0c0e;
+  --bg-soft: #101114;
+  --surface: #14161a;
+  --ink: #eceae4;
+  --ink-soft: #b9b6ae;
+  --ink-dim: #9a978f;
+  --ink-faint: #8c897f;
+  --rule: #23252a;
+  --rule-soft: #1c1e22;
+  --accent: #e2b54a;
+  --accent-hover: #f3cf76;
+  --accent-ink: #0b0c0e;
+  --panel: #111316;
+  --glow: rgba(226, 181, 74, 0.10);
+  --lane-1: #e2b54a;
+  --lane-2: #6fa8ff;
+  --lane-3: #c792ea;
+  --lane-4: #eceae4;
+  --ok: #7fc77a;
+  --bad: #e5736a;
+  --heat-hot: #f38020;
+  --heat-ink: #0b0c0e;
+  /* … and black in dark mode. */
+  --tip-bg: #000000;
+  --tip-ink: #eceae4;
+  --tip-dim: #9a978f;
+  --tip-add: #7fc77a;
+  --tip-del: #e5736a;
+}
+
+* { box-sizing: border-box; }
+
+/* The page colour belongs to the root too: without it, any area the body
+   doesn't cover (short pages, overscroll, Safari's dynamic toolbars) shows
+   the browser's own default colour instead of ours. */
+/* The page colour is painted on the root as well as the body, and color-scheme
+   follows the theme, so no area outside the body ever shows the browser's own
+   canvas colour (white in light, near-black in dark). */
+html { background: var(--bg); min-height: 100%; }
+html, body { background-color: var(--bg); }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  /* The footer sits at the bottom of the window even when a page is short. */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+body > main { flex: 1 0 auto; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+code, pre, kbd, .mono { font-family: var(--font-mono); }
+
+.mono-dim { color: var(--ink-faint); font-size: 12px; }
+
+/* The hero glow: warm orange wash over a faint dot grid. The dots live on a
+   ::before layer so their edge fade (the mask) never touches the text. */
+.hero-bg {
+  position: relative;
+  background: radial-gradient(ellipse 90% 70% at 50% -10%, var(--glow), transparent 70%);
+}
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, var(--rule) 0.8px, transparent 0.9px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 85% at 50% 35%, black 40%, transparent 95%);
+  mask-image: radial-gradient(ellipse 80% 85% at 50% 35%, black 40%, transparent 95%);
+  pointer-events: none;
+}
+.hero-bg > * { position: relative; }
+
+.card {
+  border: 1px solid var(--rule);
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+/* Marketing header (landing design, option A). */
+.site-header {
+  width: 100%; box-sizing: border-box; max-width: 1200px; margin: 0 auto; padding: 22px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+.site-logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
+.site-logo:hover { color: var(--ink); }
+.site-mark { width: 26px; height: 26px; display: block; flex: none; }
+.site-nav { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 15px; }
+.site-nav > a { color: var(--ink-dim); }
+.site-nav > a:hover { color: var(--ink); }
+.site-signin {
+  color: var(--bg); background: var(--ink); padding: 10px 16px; border-radius: 8px; font-weight: 600;
+}
+.site-identity {
+  display: flex; align-items: center; gap: 9px; color: var(--ink);
+  padding: 5px 14px 5px 6px; border: 1px solid var(--rule); border-radius: 999px; font-size: 14px;
+}
+
+/* Portal rail — zega dashboard metrics (fixed 22px wells, labels hidden not
+   moved: the icon column cannot shift between states). */
+/* The rail sits on top of the content rather than pushing it: content always
+   reserves the collapsed width (68px), and opening the menu overlays it. */
+.sidebar {
+  position: fixed; left: 0; top: 0; height: 100dvh; z-index: 20;
+  width: 196px; display: flex; flex-direction: column; overflow: hidden;
+  padding-top: 16px; padding-bottom: 16px;
+  border-right: 1px solid var(--rule); background: var(--bg);
+  transition: width .22s cubic-bezier(.22, 1, .36, 1);
+}
+.sidebar.sidebar-collapsed { width: 68px; }
+.portal-main { flex: 1; min-width: 0; padding: 16px 24px 24px calc(68px + 24px); }
+
+/* Signed in, there is no header: search and the identity pill float on their
+   own at the top right, each on a frosted, slightly transparent ground (like
+   deka.gg's menu), and the content gets the whole page. */
+.portal-bar {
+  position: fixed; top: calc(env(safe-area-inset-top, 0px) + 12px); right: 24px; z-index: 40;
+  display: flex; align-items: center; gap: 10px; pointer-events: none;
+}
+.portal-bar > * { pointer-events: auto; }
+.portal-bar .search-trigger {
+  background: color-mix(in oklab, var(--panel) 62%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  border: 1px solid color-mix(in oklab, var(--rule) 80%, transparent);
+}
+.portal-bar .search-trigger { margin-right: 0; width: min(300px, 40vw); }
+@media (max-width: 760px) { .portal-main { padding-top: 60px; } .portal-bar { right: 12px; } .portal-bar .search-trigger { width: auto; min-width: 0; gap: 8px; } .portal-bar .search-trigger span { display: none; } }
+.sidebar-rows { display: grid; gap: 8px; padding-inline: 12px; align-content: start; }
+.sidebar-bottom { margin-top: auto; display: grid; gap: 8px; padding-inline: 12px; align-content: end; }
+.sidebar-bottom .sidebar-account-rows { padding-inline: 0; }
+.sidebar-rule { height: 1px; background: var(--rule); }
+.sidebar-mid { flex: 1; background: none; border: 0; cursor: pointer; padding: 0; }
+
+.sidebar-row {
+  display: flex; align-items: center; gap: 10px; min-height: 44px;
+  padding: 11px 12px 11px 13px; border: 0; border-radius: 4px;
+  background: transparent; color: var(--ink-soft); font-size: 13px;
+  line-height: 16px; cursor: pointer; min-width: 0;
+}
+.sidebar-row:hover { color: var(--ink); }
+.sidebar-well {
+  width: 22px; height: 22px; flex: 0 0 22px; border-radius: 4px;
+  display: grid; place-items: center; color: var(--ink-soft);
+}
+.sidebar-row:hover .sidebar-well { background: var(--rule); }
+.sidebar-label { white-space: nowrap; overflow: hidden; }
+.sidebar-collapsed .sidebar-label { display: none; }
+
+.sidebar-collapse {
+  width: 22px; height: 22px; margin-left: auto; margin-right: 13px;
+  padding: 0; display: grid; place-items: center; border: 0; border-radius: 4px;
+  background: transparent; color: var(--ink-soft); cursor: pointer;
+  transition: margin-right .22s cubic-bezier(.22, 1, .36, 1);
+}
+.sidebar-collapse:hover { background: var(--rule); }
+.sidebar-collapsed .sidebar-collapse { margin-right: 23px; }
+.sidebar-glyph {
+  position: relative; width: 12px; height: 12px;
+  border: 1px solid currentColor; border-radius: 2px; display: block;
+}
+.sidebar-glyph::after {
+  content: ''; position: absolute; top: 1.5px; bottom: 1.5px; left: 1.5px;
+  width: 1px; border-radius: 1px; background: currentColor;
+  transition: left .22s cubic-bezier(.22, 1, .36, 1);
+}
+.sidebar-collapsed .sidebar-glyph::after { left: 7px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar, .sidebar-collapse, .sidebar-glyph::after { transition-duration: 0ms; }
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Footer: three columns; stacked and centred on phones. */
+.site-footer-grid {
+  max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: center; gap: 16px; font-size: 12.5px; color: var(--ink-soft);
+}
+.site-footer-credit { justify-self: center; color: var(--ink-faint); display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; }
+@media (max-width: 760px) {
+  .site-footer-grid { grid-template-columns: 1fr; justify-items: center; }
+  .site-footer-grid > * { justify-self: center !important; }
+}
+
+/* Search follows Deka/Zega's header panel and focus handling, in gild's palette. */
+.search-trigger { margin-right: auto; min-width: 190px; display: flex; align-items: center; gap: 28px; padding: 8px 12px; background: var(--panel); color: var(--ink-dim); border: 1px solid var(--rule); border-radius: 7px; font: inherit; font-size: 13px; cursor: pointer; }
+.search-trigger kbd { margin-left: auto; border: 1px solid var(--rule); border-radius: 3px; padding: 0 5px; }
+.search-trigger:focus-visible, .search-option:focus-visible, .search-dialog button:focus-visible, .search-page input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.search-backdrop { position: fixed; inset: 0; z-index: 100; background: rgb(0 0 0 / .65); backdrop-filter: blur(3px); padding: 28px 20px; display: flex; align-items: flex-start; justify-content: center; }
+.search-dialog { width: min(860px, 100%); min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; box-shadow: 0 24px 80px rgb(0 0 0 / .4); overflow: hidden; }
+.search-input-row { display: flex; align-items: center; gap: 12px; padding: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); }
+.search-input-row input { flex: 1; min-width: 120px; border: 0; padding: 6px 0; outline: 0; background: transparent; color: var(--ink); font: inherit; font-size: 17px; }
+.search-scope { max-width: 100%; overflow-wrap: anywhere; background: var(--glow); color: var(--accent); border: 1px solid var(--rule); border-radius: 5px; padding: 5px 9px; font: 12px var(--font-mono); cursor: pointer; }
+.search-close { border: 1px solid var(--rule); border-radius: 4px; padding: 4px 7px; background: var(--panel); color: var(--ink-dim); cursor: pointer; }
+.search-status { padding: 9px 16px; min-height: 40px; color: var(--ink-dim); font-size: 12px; display: flex; justify-content: space-between; gap: 12px; }
+.search-options { max-height: min(65dvh, 650px); overflow-y: auto; padding: 5px 8px; }
+.search-option { display: block; padding: 11px 10px; border-radius: 6px; margin-bottom: 4px; color: var(--ink); min-width: 0; }
+.search-option[data-selected='true'], .search-option:hover { background: var(--bg-soft); color: var(--ink); box-shadow: inset 3px 0 var(--accent); }
+.search-option-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; }
+.search-option-title > span { overflow-wrap: anywhere; min-width: 0; font-weight: 600; }
+.search-option small { color: var(--ink-dim); font-size: 11px; }
+.search-footer { display: flex; justify-content: space-between; padding: 12px 16px; border-top: 1px solid var(--rule); color: var(--accent); font-size: 13px; }
+.search-footer span { color: var(--ink-dim); }
+.search-code-line { display: flex; min-width: 0; gap: 16px; padding: 3px 8px; font-size: 12px; color: var(--ink-soft); }
+.search-code-line code { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
+.search-line-number { min-width: 30px; flex-shrink: 0; color: var(--ink-faint); text-align: right; font-family: var(--font-mono); user-select: none; }
+.search-code-line mark { color: #17181b; background: #f38020; border-radius: 2px; }
+.search-page { max-width: 1180px; margin: 20px auto; }
+.search-page-form { max-width: 860px; margin-bottom: 28px; }
+.search-page-form label { display: block; font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+.search-page-form > div { display: flex; gap: 10px; }
+.search-page-form input { min-width: 0; width: 100%; padding: 10px 14px; color: var(--ink); border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; font: inherit; }
+.search-page-form button { color: var(--accent-ink); background: var(--accent); border: 0; padding: 10px 18px; border-radius: 6px; font: inherit; font-weight: 600; }
+.search-page-grid { display: grid; grid-template-columns: 200px minmax(0,1fr); gap: 28px; }
+.search-filters { min-width: 0; border-right: 1px solid var(--rule); padding-right: 20px; }
+.search-filters h2 { font-size: 15px; margin: 0 0 14px; }
+.search-filters h3 { font-size: 13px; margin: 20px 0 8px; color: var(--ink-dim); }
+.search-filters a { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; padding: 5px 0; overflow-wrap: anywhere; }
+.search-filters a span { color: var(--ink-dim); }
+.search-hit { border: 1px solid var(--rule); background: var(--panel); border-radius: 8px; padding: 16px; margin-top: 16px; min-width: 0; overflow: hidden; }
+.search-file-title { display: block; font-size: 14px; color: var(--accent); overflow-wrap: anywhere; }
+.search-file-title span { color: var(--ink-dim); }
+.search-language { display: block; font-size: 11px; color: var(--ink-dim); margin: 4px 0 12px; }
+.search-count { font-size: 16px; font-weight: 600; }
+.search-pagination { display: flex; gap: 20px; justify-content: center; margin-top: 28px; font-size: 13px; color: var(--accent); }
+.search-empty { padding: 28px 16px; color: var(--ink-dim); }
+.search-hint { color: var(--ink-dim); font-size: 13px; }
+[id^='L'] { scroll-margin-top: 32px; }
+[id^='L']:target { background: color-mix(in srgb, #f38020 22%, transparent); outline: 1px solid #f38020; }
+@media (max-width: 600px) {
+  .site-header { padding: 16px; gap: 12px; }
+  .site-nav { gap: 12px; font-size: 12px; }
+  .search-trigger { min-width: 160px; flex: 1; }
+  .search-backdrop { padding: 0; }
+  .search-dialog { width: 100%; border-radius: 0 0 10px 10px; }
+  .search-input-row { gap: 8px; padding: 12px; }
+  .search-scope { flex-basis: 100%; text-align: left; width: fit-content; }
+  .search-status > span { display: none; }
+  .search-options { max-height: 65dvh; }
+  .search-page-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .search-filters { border: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  .search-filters h2, .search-filters h3 { margin: 0; }
+  .search-hit { padding: 12px; }
+}
+
+.portal-menu{display:none}
+@media(max-width:760px){.portal-menu{display:grid;place-items:center;position:fixed;z-index:60;left:12px;top:12px;width:36px;height:36px;border:1px solid var(--rule);border-radius:7px;background:var(--surface);color:var(--ink);font-size:18px;cursor:pointer}.sidebar.sidebar-collapsed{transform:translateX(-100%)}.sidebar{padding-top:60px}.portal-main{padding:60px 16px 32px}}
+.archive-banner{border:1px solid var(--rule);border-radius:6px;background:var(--panel);padding:10px 16px;margin:60px 0 20px;font-size:14px}
+
+/* Late identity data cannot resize the signed-out header. */
+.site-nav [data-identity] { min-width: 84px; width: 240px; max-width:100%; height: 44px; display: flex; align-items: center; }
+.site-signin { display: flex; align-items: center; justify-content: center; width: 84px; height: 44px; white-space: nowrap; }
+.site-nav > a:first-child { width: 94px; white-space: nowrap; }
+.site-nav > a:nth-child(2) { width: 48px; white-space: nowrap; }
+
+/* Signed-in fragment shells reserve the Next portal geometry before islands. */
+html[data-portal] .site-header { display:contents; }
+html[data-portal] .site-header > :not(.portal-bar), html[data-portal] body > footer { display:none; }
+html[data-portal] body > main { flex:1; min-width:0; padding:16px 24px 24px 92px !important; }
+[data-settings][hidden] { display:flex !important; visibility:hidden; }
+
+[hidden] { display: none !important; }
+
+.site-logo { flex:none; }
+
+.site-identity { min-width:0; max-width:100%; }
+.site-identity img, .site-identity > :first-child:not(.identity-label) { flex:none; }
+.identity-label { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/* Public headers use the same search view in normal flow. Portal shells keep
+   the floating search visible before identity hydration. */
+html:not([data-portal]) .site-header .portal-bar { position:static; margin-right:auto; }
+html:not([data-portal]) .site-header .portal-bar .search-trigger { width:auto; min-width:190px; }
+html:not([data-portal]) .site-header .portal-bar .search-trigger span { display:inline; }
+@media(max-width:760px) {
+  html[data-portal] body > main { padding:60px 16px 32px !important; }
+  html:not([data-portal]) .site-header .portal-bar .search-trigger { min-width:160px; }
+}

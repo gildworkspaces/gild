@@ -1,0 +1,77 @@
+/* Uses gild's existing Zega-derived disclosure/card and palette patterns. */
+.docs {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 64px;
+  color: var(--ink);
+  min-width: 0;
+}
+.docs h1 {
+  font-size: 36px;
+}
+.docs h2 {
+  margin-top: 32px;
+}
+.docs p {
+  line-height: 1.7;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+.docs a {
+  color: var(--accent);
+}
+.docs code {
+  font-family: var(--font-mono);
+  overflow-wrap: anywhere;
+}
+.routes {
+  display: grid;
+  gap: 12px;
+}
+.routes details {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--panel);
+  min-width: 0;
+}
+.routes summary {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.routes summary strong {
+  color: var(--accent);
+  min-width: 54px;
+}
+.routes summary code {
+  min-width: 0;
+}
+.docs pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 12px;
+  background: var(--bg);
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 12px;
+}
+.routes summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+@media (max-width: 450px) {
+  .docs {
+    padding-inline: 16px;
+    margin-top: 24px;
+  }
+  .routes details {
+    padding: 12px;
+  }
+  .routes summary {
+    font-size: 12px;
+    gap: 8px;
+  }
+}

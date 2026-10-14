@@ -1,0 +1,33 @@
+# Manual Pending retry: observed failure and narrow correction
+
+The actual default `node scripts/fragments-local.mjs --browser` flow failed at the original30-second navigationReady wait on a205d49. The same-current `href=""` Check again link fell through fragment click capture because `safeLink` excludes the current URL. The browser loaded a new document instead of retrying the fragment application. This is distinct from unfinished background preparation: the document response was200 with an exact prepared commit pointer, `render:0`, Pending removed and router ready. The original document marker was gone and navigationReady remained absent. There were no page errors and no commit-pointer API retry request.
+
+Before-fix evidence: `.tmp/fragments-review/default-pending-diagnosis.log` and `manual-pending-retry-before-fix.json`. Selected repository acme/demo, refmain, commit forty literal1s. The document response call record is do1/d1:1/r2:4/render0. The fixture's existing explicit seed producer had already published that commit. This diagnosis does not establish hosted latency or fix the original572/774ms mobile failures.
+
+The correction allows a current-URL link only when it is the explicit data-pending-retry action. Normal current-link/prefetch exclusions, modifier/target/download/origin safety, navigation budgets and GET/producer behavior remain. No fake-ready payload, producer wait, foreground render or hidden warming was added.
+
+The fixed default browser flow makes a real commit-pointer request, consumes200 prepared commit/score/home fragments, keeps the same document and sets exact navigationReady. Pointer do1/d1:6/r2:0/render0; each stored fragment do0/d1:1/r2:1/render0. There is no document request or navigation error. The regression asserts the document marker immediately after click, actual pointer request/200 response, exact selected commit and completed state. Instrumentation is bounded fixture logging, not product code.
+
+`node scripts/fragments-local.mjs --browser` passes in full with the original wait: actual queue/DO/React/Shiki/R2 production paths, cold edge call-count budgets,20 local source-file opens with zero network, history/saveData/no-JS/responsive/theme, independent v5 deployment/immutable v4, retention sweep, Lua highlighting and original fast-path/foreground-render/push removals. Log `.tmp/fragments-review/default-pending-final.log`. Renderer build, strict TypeScript, syntax and diff checks pass. This is local acceptance for this flow, not full CI/matrix/live-site acceptance.
+
+`node scripts/pending-retry-revert.mjs` removes the exact current-retry allowance, rebuilds renderer assets, then runs the same actual Pending scenario. It fails through AssertionError on the immediate same-document effect, not a timeout/module/syntax failure. It restores source in finally, rebuilds again and reruns the actual flow successfully. Logs `pending-retry-removed.log`, `pending-retry-restored.log` and `pending-retry-removal-evidence.json` under the same directory. Its `--pending-retry-only` mode only bounds this removal proof; default `--browser` and every original wait/check remain unchanged.
+
+Retained validation corrections: the first fix attempt loaded old prebuilt router assets (same original content hash), so it was not a source-effect result; rebuild resolved that prerequisite. The first rebuilt run showed the correct real pointer/fragment requests and document/readiness effects but a new diagnostic assertion incorrectly assumed the old #gild-pointer bootstrap element survived the DOM swap. The assertion now reads the actual200 pointer response. Both failed logs remain `default-pending-fixed.log` and `default-pending-compiled-fixed.log`; neither is counted as a passing gate. A stale build cannot prove a product correction or removal.
+
+PR101 remains held. Existing docs/SSR identity fixes are preserved. No full-matrix restart, timeout relaxation, deployment, merge, release, credential/provider or permission change. Ava is the sole hosted CI watcher and must reconcile the new source checkpoint independently.
+
+-codex
+
+## Follow-up: current retry history, scroll and canonical URL
+
+Independent static review of29755be found that same-current retry still defaulted to push, duplicating the history entry/resetting scroll. Actual Chrome reproduction confirms the first still-Pending retry increases history3→4; `.tmp/fragments-review/pending-history-before.log` retains that assertion failure. Corrected routing uses preserve only for the exact-current explicit retry. An empty href is rebound to the complete current URL including hash; otherwise browser href resolution drops the fragment. A prepared abbreviated commit's full canonical URL replaces this same entry with its existing history state. Ordinary navigation still pushes.
+
+New actual browser checks perform two still-Pending retries, then read the real prepared pointer/fragments, at a genuine120px document scroll position. They assert unchanged history length/opaque state/saved and actual scroll, same document/no error, and one Back to the preceding repository URL/scroll. A second actual unique abbreviatedcommit resolves canonically, preserving ?ref=main#L1 and the same entry/scroll; one Back returns to the prior repository. The first corrected run exposed the real empty-href hash loss and is retained in pending-history-fixed.log. No fake-ready response or foreground producer change; the existing202 simulation holds unavailable preparation only, successful reads use actual published artifacts.
+
+The expanded `node scripts/pending-retry-revert.mjs` removes capture, history-preserving mode and canonical replace independently, rebuilds each actual router, and fails the appropriate document/history/canonical path assertion (not a timeout/syntax/module failure). Finally-restored source/rebuilt actual flow passes. Three meaningful removals with one restored positive; earlier297 proof logs/ledger are archived before overwrite. Focused log pending-history-final-focused.log and pending-retry-history.json retain history/scroll/Back/canonical evidence. The full default gate and strict types are reported separately after completion; no duplicate full-suite run or relaxed wait/budget is required by the source review.
+
+-codex
+
+Validation completion: full/default node scripts/fragments-local.mjs --browser passes once on this corrected source, retaining all original gates and30s waits. Strict TypeScript/syntax/diff pass. Logs .tmp/fragments-review/pending-history-default-full.log and pending-history-types.log. New source requires scoped re-review/current-head hostedCI through Ava; originalmobile572/774 and broadercold/matrix limits remain unresolved.
+
+-codex

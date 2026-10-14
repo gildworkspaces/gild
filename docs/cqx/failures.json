@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "partial",
+    "path": "/score?cat=security",
+    "ms": 1701,
+    "note": "Code Score of main at b821a6a\n\nC/C++/C# couldn’t be scored right now. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n2 lines analysed."
+  },
+  {
+    "repo": "partial",
+    "path": "",
+    "ms": 571,
+    "note": "Code Score\nC/C++/C# couldn’t be scored right now. Partial score: other languages only."
+  },
+  {
+    "repo": "partial",
+    "path": "/commit/b821a6a016f2a772280d96bf66f79a4ca5101d9a?cat=security",
+    "ms": 570,
+    "note": "cqx review of this commit\n\nThe five cqx categories, scored at this commit. Each starts at 100 and loses points only to a named rule. The small line is the change from its parent.\n\nC/C++/C# couldn’t be scored right now. Partial score: other languages only.\n\nits parent: C/C++/C# couldn’t be scored right now. Partial score: other languages only. Score comparison unavailable.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n2 lines analysed."
+  },
+  {
+    "repo": "partial",
+    "path": "/pulls/2?tab=glance&cat=security",
+    "ms": 645,
+    "note": "cqx review of this pull request\n\nThe five cqx categories, scored on the pull request's head. Each starts at 100 and loses points only to a named rule. The small line is the change from main.\n\nC/C++/C# couldn’t be scored right now. Partial score: other languages only.\n\nmain: C/C++/C# couldn’t be scored right now. Partial score: other languages only. Score comparison unavailable.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "partial",
+    "path": "/health?cat=security",
+    "ms": 1013,
+    "note": "Code Score of main at b821a6a\n\nC/C++/C# couldn’t be scored right now. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n2 lines analysed."
+  },
+  {
+    "repo": "c-only",
+    "path": "/score",
+    "ms": 995,
+    "note": "Code Score of main at be323c5\n\nC/C++/C# couldn’t be scored right now."
+  },
+  {
+    "repo": "c-only",
+    "path": "",
+    "ms": 575,
+    "note": "Code Score\nC/C++/C# couldn’t be scored right now."
+  },
+  {
+    "repo": "mismatch",
+    "path": "/score?cat=security",
+    "ms": 2414,
+    "note": "Code Score of main at b65c426\n\nC/C++/C# couldn’t be scored right now. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-many",
+    "path": "/score?cat=security",
+    "ms": 5599,
+    "note": "Code Score of main at 57e27e7\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-many",
+    "path": "/score?cat=security",
+    "ms": 6846,
+    "note": "Code Score of main at 57e27e7\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-big",
+    "path": "/score?cat=security",
+    "ms": 1419,
+    "note": "Code Score of main at cffcfaa\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-big",
+    "path": "/score?cat=security",
+    "ms": 477,
+    "note": "Code Score of main at cffcfaa\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-many-bytes",
+    "path": "/score?cat=security",
+    "ms": 1216,
+    "note": "Code Score of main at 0869c7f\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  },
+  {
+    "repo": "too-many-bytes",
+    "path": "/score?cat=security",
+    "ms": 563,
+    "note": "Code Score of main at 0869c7f\n\nThis repository is too large to score C-family here. Partial score: other languages only.\n\n100\nQuality\n100\nContainment\n100\nLegibility\n70\nSecurity\n100\nModularity\nSecurity: 70\n[typescript/dynamic-code]\n−30 · 1 finding\n\nglobal eval/Function calls and literal-string timers, per 10k lines\n\nsrc/index.ts:1\nexport function unsafe() { eval(\"hello\") }\n\nUse ordinary functions and pass a callback to timers instead of executing strings.\n\nCalibration\n\ncqx defaults: this repo has no cqx.json at its root. Add one to change a rule’s standard or exclude paths.\n\n1 lines analysed."
+  }
+]

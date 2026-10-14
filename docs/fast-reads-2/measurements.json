@@ -1,0 +1,179 @@
+{
+  "environment": "Local Miniflare, production renderer/browser assets, Chrome. Before read pipeline pinned to 2ae97cf15df302e7a86b540380353b97014a5ae5. Individual timings vary with concurrent local gates; no production after deployment measurement.",
+  "highlight": {
+    "bytes": {
+      "source": 61763,
+      "before": 683643,
+      "after": 153309,
+      "afterFragment": 153347,
+      "beforeFragment": 683681
+    },
+    "ratio": 2.4822142706798567,
+    "screenshots": [
+      "screenshots/lua-light-1-before.png",
+      "screenshots/lua-light-600-before.png",
+      "screenshots/lua-light-1500-before.png",
+      "screenshots/lua-light-1-after.png",
+      "screenshots/lua-light-600-after.png",
+      "screenshots/lua-light-1500-after.png",
+      "screenshots/lua-dark-1-before.png",
+      "screenshots/lua-dark-600-before.png",
+      "screenshots/lua-dark-1500-before.png",
+      "screenshots/lua-dark-1-after.png",
+      "screenshots/lua-dark-600-after.png",
+      "screenshots/lua-dark-1500-after.png"
+    ],
+    "comparisons": [
+      {
+        "theme": "light",
+        "line": 1,
+        "different": 0,
+        "total": 1540000,
+        "max": 0,
+        "ratio": 0
+      },
+      {
+        "theme": "light",
+        "line": 600,
+        "different": 729,
+        "total": 1540000,
+        "max": 61,
+        "ratio": 0.0004733766233766234
+      },
+      {
+        "theme": "light",
+        "line": 1500,
+        "different": 342,
+        "total": 1540000,
+        "max": 60,
+        "ratio": 0.00022207792207792207
+      },
+      {
+        "theme": "dark",
+        "line": 1,
+        "different": 0,
+        "total": 1540000,
+        "max": 0,
+        "ratio": 0
+      },
+      {
+        "theme": "dark",
+        "line": 600,
+        "different": 729,
+        "total": 1540000,
+        "max": 79,
+        "ratio": 0.0004733766233766234
+      },
+      {
+        "theme": "dark",
+        "line": 1500,
+        "different": 342,
+        "total": 1540000,
+        "max": 78,
+        "ratio": 0.00022207792207792207
+      }
+    ]
+  },
+  "localReadsBefore": [
+    {
+      "path": "/avatest/lua?ref=main&path=lvm.c",
+      "state": "cold",
+      "ttfbMs": 627.8405619999999,
+      "htmlBytes": 751966,
+      "calls": {
+        "do": 1,
+        "d1": 5,
+        "r2": 5,
+        "render": 2
+      }
+    },
+    {
+      "path": "/avatest/lua?ref=main&path=lvm.c",
+      "state": "warm",
+      "ttfbMs": 134.33452900000066,
+      "htmlBytes": 751966,
+      "calls": {
+        "do": 1,
+        "d1": 5,
+        "r2": 3,
+        "render": 0
+      }
+    }
+  ],
+  "localReadsAfter": [
+    {
+      "path": "/avatest/lua?ref=main&path=lvm.c",
+      "state": "cold",
+      "ttfbMs": 260.0225989999999,
+      "htmlBytes": 385416,
+      "calls": {
+        "do": 0,
+        "d1": 2,
+        "r2": 5,
+        "render": 2
+      }
+    },
+    {
+      "path": "/avatest/lua?ref=main&path=lvm.c",
+      "state": "warm",
+      "ttfbMs": 34.40383100000008,
+      "htmlBytes": 385416,
+      "calls": {
+        "do": 0,
+        "d1": 1,
+        "r2": 0,
+        "render": 0
+      }
+    }
+  ],
+  "realGitPush": {
+    "gitPushMs": 512.5295650000007,
+    "pushReturnToVisibleMs": 637.3071319999981,
+    "publicReads": 16,
+    "publicErrors": 0
+  },
+  "liveBefore": {
+    "url": "https://gild.gg/avatest/lua?ref=main&path=lvm.c",
+    "ttfbMs": [
+      2381.175,
+      2377.943
+    ],
+    "htmlBytes": 783161,
+    "measuredUtc": "2026-10-08T15:15:02Z"
+  },
+  "regressionProofs": {
+    "--reverted-wait": "failed: cold wait consumes the queued highlight",
+    "--reverted-push": "failed: repository DO retains the previous pointer while the push is pending",
+    "--reverted-fallback": "failed: permanent highlight failure returns plain source",
+    "--reverted-fast-path": "failed: public fragment call-count budget",
+    "--reverted-ready-refs": "failed: ready main remains on prior tip when another ref fails",
+    "--reverted-backfill": "failed: legacy repository has no heads without a push"
+  },
+  "cachedFragmentWorkerInvocations": 1,
+  "finalSourceChecks": {
+    "build:cloudflare": "pass",
+    "test:privacy:web": "pass, including real push",
+    "test:fragments": "pass, including six behavioral revert failures",
+    "tsc --noEmit": "pass",
+    "highlight complete fragment/palette/screenshots": "pass"
+  },
+  "reviewRegressions": {
+    "independentHeads": true,
+    "automaticRetryAlarm": true,
+    "missingManifestIsolation": true,
+    "legacyBackfillWithoutPush": true,
+    "canonicalDeltaDeduplication": true,
+    "cachedAndRenderedHistoryFree": true,
+    "operatorPurgeMockOnly": true
+  },
+  "renderTimings": [
+    {
+      "path": "cold queued render",
+      "ms": 167.37587299999996
+    },
+    {
+      "path": "plain fallback",
+      "ms": 8033.876719000001
+    }
+  ]
+}

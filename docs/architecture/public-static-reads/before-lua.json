@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/avatest/lua",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 181.80000001192093,
+    "fcpMs": 300,
+    "loadMs": 274.80000001192093,
+    "bundleReadyMs": 4864,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791541992489,
+    "bundles": [
+      {
+        "path": "/f/v2/bundle/f3430586e0a4fa97703118148c7c0760ce31998f",
+        "startMs": 477.5888671875,
+        "durationMs": 4045.765,
+        "requestBodySize": 0,
+        "requestHeadersSize": 484,
+        "responseBodySize": 1025066,
+        "responseHeadersSize": 371
+      }
+    ],
+    "calls": null,
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 6.699999988079071,
+    "fcpMs": 60,
+    "loadMs": 33.90000003576279,
+    "bundleReadyMs": 51.5,
+    "sourceReady": "f3430586e0a4fa97703118148c7c0760ce31998f",
+    "sourceError": null,
+    "timeOrigin": 1791541997377.1,
+    "bundles": [],
+    "calls": null,
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "cold",
+    "status": 200,
+    "ttfbMs": 18,
+    "fcpMs": 252,
+    "loadMs": 226.80000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0013\"... is not valid JSON",
+    "timeOrigin": 1791541997681.1,
+    "bundles": [],
+    "calls": null,
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  },
+  {
+    "path": "/avatest/lua?ref=main&path=lvm.c",
+    "state": "warm",
+    "status": 200,
+    "ttfbMs": 5.5,
+    "fcpMs": 212,
+    "loadMs": 131.30000001192093,
+    "bundleReadyMs": null,
+    "sourceReady": null,
+    "sourceError": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0013\"... is not valid JSON",
+    "timeOrigin": 1791541998085.9,
+    "bundles": [],
+    "calls": null,
+    "fixture": {
+      "source": "https://gild.gg/avatest/lua.git",
+      "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+      "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f",
+      "files": 111
+    }
+  }
+]

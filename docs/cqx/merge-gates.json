@@ -1,0 +1,62 @@
+[
+  {
+    "gate": "unit",
+    "command": "bun run test",
+    "exit": 0
+  },
+  {
+    "gate": "api",
+    "command": "bun run test:api",
+    "exit": 0
+  },
+  {
+    "gate": "cloudflare",
+    "command": "bun run build:cloudflare",
+    "exit": 0
+  },
+  {
+    "gate": "bundles",
+    "command": "bun run test:cqx:bundles",
+    "exit": 0
+  },
+  {
+    "gate": "events",
+    "command": "bun run test:events",
+    "exit": 0
+  },
+  {
+    "gate": "sessions",
+    "command": "bun run test:sessions",
+    "exit": 0
+  },
+  {
+    "gate": "cqx-local",
+    "command": "bun run test:cqx:local",
+    "exit": 0
+  },
+  {
+    "gate": "theme",
+    "command": "bun run test:theme",
+    "exit": 0
+  },
+  {
+    "gate": "repo-list",
+    "command": "bun run test:repo-list",
+    "exit": 0
+  },
+  {
+    "gate": "repo-list-local",
+    "command": "bun run test:repo-list:local",
+    "exit": 0
+  },
+  {
+    "gate": "runners",
+    "command": "bun run test:runners:local",
+    "exit": 0
+  },
+  {
+    "gate": "typecheck",
+    "command": "bunx tsc --noEmit",
+    "exit": 0
+  }
+]

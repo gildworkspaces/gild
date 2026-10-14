@@ -1,0 +1,28 @@
+{
+  "runtime": "compiled OpenNext Worker + real D1/DO/Git",
+  "repo": "settingstest/demo",
+  "issue": 3,
+  "historyTiming": {
+    "firstRequestMs": 347,
+    "repeatMedianMs": 96,
+    "cache": "no-store; repeated requests still read the DO"
+  },
+  "screenshots": [
+    "channel-light-1280.png",
+    "channel-dark-1280.png",
+    "channel-dark-390.png"
+  ],
+  "checks": [
+    "two cookie clients live",
+    "participant order",
+    "shared issue page modal",
+    "v1 comment persisted",
+    "close issue",
+    "v1 tree expansion",
+    "shared file view",
+    "Back after nested navigation",
+    "deep link",
+    "phone",
+    "private WebSocket"
+  ]
+}

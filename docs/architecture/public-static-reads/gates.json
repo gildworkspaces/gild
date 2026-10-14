@@ -1,0 +1,112 @@
+[
+  {
+    "command": "bun run test && bunx tsc --noEmit",
+    "exit": 0,
+    "seconds": null,
+    "note": "Final source: 263 tests passed, 0 failed; tsc --noEmit exit 0. Elapsed duration was not recorded."
+  },
+  {
+    "command": "bun run test:actions:logs:revert",
+    "exit": 0,
+    "seconds": 1.525
+  },
+  {
+    "command": "bun run test:privacy",
+    "exit": 0,
+    "seconds": 24.562
+  },
+  {
+    "command": "bun run test:privacy:revert",
+    "exit": 0,
+    "seconds": 2.932
+  },
+  {
+    "command": "bun run test:repo-list:perf",
+    "exit": 0,
+    "seconds": 3
+  },
+  {
+    "command": "bun run test:api",
+    "exit": 0,
+    "seconds": 50.181
+  },
+  {
+    "command": "bun run test:events",
+    "exit": 0,
+    "seconds": 55.893
+  },
+  {
+    "command": "bun run test:sessions",
+    "exit": 0,
+    "seconds": 48.807
+  },
+  {
+    "command": "bun run test:import:revert",
+    "exit": 0,
+    "seconds": 8.573
+  },
+  {
+    "command": "bun run test:import",
+    "exit": 0,
+    "seconds": 49.739
+  },
+  {
+    "command": "bun run test:privacy:web",
+    "exit": 0,
+    "seconds": 121.563
+  },
+  {
+    "command": "bun run test:static",
+    "exit": 0,
+    "seconds": null,
+    "note": "Final rerun passed; elapsed duration was not recorded."
+  },
+  {
+    "command": "bun run test:static:browser",
+    "exit": 0,
+    "seconds": null,
+    "note": "Final rerun passed; elapsed duration was not recorded."
+  },
+  {
+    "command": "bun run test:static:revert",
+    "exit": 0,
+    "seconds": null,
+    "note": "Final rerun passed; elapsed duration was not recorded."
+  },
+  {
+    "command": "bun run test:repo-shell",
+    "exit": 0,
+    "seconds": 396.056
+  },
+  {
+    "command": "bun run test:fragments",
+    "exit": 0,
+    "seconds": 70.737
+  },
+  {
+    "command": "bun run test:cqx:bundles",
+    "exit": 0,
+    "seconds": 10.435
+  },
+  {
+    "command": "bun run test:cqx:local",
+    "exit": 0,
+    "seconds": 232.966
+  },
+  {
+    "command": "bun run test:runners:local",
+    "exit": 0,
+    "seconds": 279.324
+  },
+  {
+    "command": "bun run test:theme",
+    "exit": 0,
+    "seconds": 5.635
+  },
+  {
+    "command": "bun run build:cloudflare",
+    "exit": 0,
+    "seconds": null,
+    "note": "Final build passed, including both manifests and 43 retained Next assets; elapsed duration was not recorded."
+  }
+]

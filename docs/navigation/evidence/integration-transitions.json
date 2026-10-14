@@ -1,0 +1,512 @@
+[
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "issues",
+    "feedbackMs": 2.399999998509884,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "pulls",
+    "feedbackMs": 1.300000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "actions",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "agents",
+    "feedbackMs": 1.2999999970197678,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "code",
+    "to": "score",
+    "feedbackMs": 1.2999999970197678,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "code",
+    "feedbackMs": 1.7000000029802322,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "pulls",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "actions",
+    "feedbackMs": 1.6000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "agents",
+    "feedbackMs": 1.0999999977648258,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "issues",
+    "to": "score",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "code",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "issues",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "actions",
+    "feedbackMs": 1.6000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "agents",
+    "feedbackMs": 1.1000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "pulls",
+    "to": "score",
+    "feedbackMs": 1.4000000022351742,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "code",
+    "feedbackMs": 1.4000000022351742,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "issues",
+    "feedbackMs": 1.300000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "pulls",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "agents",
+    "feedbackMs": 1.0999999977648258,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "actions",
+    "to": "score",
+    "feedbackMs": 1.2999999970197678,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "code",
+    "feedbackMs": 2.100000001490116,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "issues",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "pulls",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "actions",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "agents",
+    "to": "score",
+    "feedbackMs": 1.6000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "code",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "issues",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "pulls",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "actions",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 1400,
+    "from": "score",
+    "to": "agents",
+    "feedbackMs": 1.300000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "issues",
+    "feedbackMs": 2.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "pulls",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "actions",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "agents",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "code",
+    "to": "score",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "code",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "pulls",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "actions",
+    "feedbackMs": 1.1000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "agents",
+    "feedbackMs": 1.5,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "issues",
+    "to": "score",
+    "feedbackMs": 1.300000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "code",
+    "feedbackMs": 1.1000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "issues",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "actions",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "agents",
+    "feedbackMs": 1.2000000029802322,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "pulls",
+    "to": "score",
+    "feedbackMs": 1.6000000014901161,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "code",
+    "feedbackMs": 1.3999999985098839,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "issues",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "pulls",
+    "feedbackMs": 1.300000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "agents",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "actions",
+    "to": "score",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "code",
+    "feedbackMs": 1.800000000745058,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "issues",
+    "feedbackMs": 1.2999999970197678,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "pulls",
+    "feedbackMs": 1.2999999970197678,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "actions",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "agents",
+    "to": "score",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "code",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "issues",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "pulls",
+    "feedbackMs": 1,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "actions",
+    "feedbackMs": 0.9000000022351742,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "width": 400,
+    "from": "score",
+    "to": "agents",
+    "feedbackMs": 1.199999999254942,
+    "cls": 0,
+    "documents": 0
+  },
+  {
+    "warm": true,
+    "tab": "issues",
+    "contentMs": 3.800000000745058
+  },
+  {
+    "warm": true,
+    "tab": "pulls",
+    "contentMs": 2.699999999254942
+  },
+  {
+    "warm": true,
+    "tab": "actions",
+    "contentMs": 2.599999997764826
+  },
+  {
+    "warm": true,
+    "tab": "agents",
+    "contentMs": 2.600000001490116
+  },
+  {
+    "warm": true,
+    "tab": "score",
+    "contentMs": 2.400000002235174
+  },
+  {
+    "warm": true,
+    "tab": "code",
+    "contentMs": 4
+  }
+]

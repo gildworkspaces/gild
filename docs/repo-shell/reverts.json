@@ -1,0 +1,38 @@
+[
+  {
+    "case": "headers",
+    "revertedExit": "nonzero",
+    "assertion": "shared chrome: direct anonymous /issues light",
+    "restoredExit": 0
+  },
+  {
+    "case": "push",
+    "revertedExit": "nonzero",
+    "assertion": "push file scrolls to top",
+    "restoredExit": 0
+  },
+  {
+    "case": "history",
+    "revertedExit": "nonzero",
+    "assertion": "back restores file entry",
+    "restoredExit": 0
+  },
+  {
+    "case": "hash",
+    "revertedExit": "nonzero",
+    "assertion": "push follows hash target",
+    "restoredExit": 0
+  },
+  {
+    "case": "boot",
+    "revertedExit": "nonzero",
+    "assertion": "late boot preserves reader position",
+    "restoredExit": 0
+  },
+  {
+    "case": "tip",
+    "revertedExit": "nonzero",
+    "assertion": "tip refresh preserves reader position even with hash",
+    "restoredExit": 0
+  }
+]

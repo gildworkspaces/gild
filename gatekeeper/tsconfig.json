@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "types": ["./worker-configuration.d.ts"],
+    "paths": {
+      "@gadgets/gatekeeper-kit/*": ["../gatekeeper-kit/src/*"],
+      "@gadgets/workshop-shared/*": ["../workshop-shared/src/*"]
+    }
+  },
+  "include": ["src", "__tests__/**/*.ts"],
+  "exclude": ["dist", "node_modules", ".wrangler"]
+}

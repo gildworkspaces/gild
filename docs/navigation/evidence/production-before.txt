@@ -1,0 +1,18 @@
+landing 2374 ms
+[["mediatr","/avatest/mediatr"],["Issues0","/avatest/mediatr/issues"],["Pull requests0","/avatest/mediatr/pulls"],["Actions","/avatest/mediatr/actions"],["Agents","/avatest/mediatr/agents"],["Score","/avatest/mediatr/score?ref=main"],["Code Score","/avatest/mediatr/score?ref=main"]]
+issues   url@ 2323ms settled@ 2930ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr/issues 2261 | fetch:/f/v3/manifest/1e2528946da3bed4da92b05f94adb74cbbd9f374?repo=avatest%2 939 | fetch:/api/repos/avatest/mediatr/islands 514 | script:/_next/static/chunks/0fgv05yxfibk_.js 383
+pulls    url@ 1208ms settled@ 1811ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr/pulls 1174 | fetch:/avatest/mediatr/pulls 784 | fetch:/api/repos/avatest/mediatr/islands 380 | fetch:/api/viewer 71
+actions  url@ 1349ms settled@ 1952ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr/actions 1235 | fetch:/avatest/mediatr/actions 798 | fetch:/api/repos/avatest/mediatr/islands 382 | script:/_next/static/chunks/1bwal6-_vnqod.js 157
+agents   url@ 1373ms settled@ 2275ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr/agents 1344 | fetch:/avatest/mediatr/agents 911 | fetch:/api/viewer 715 | fetch:/api/repos/avatest/mediatr/islands 489
+code     url@  660ms settled@  961ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr 560 | fetch:/api/fragments/avatest/mediatr?page=code&path= 348 | fetch:/api/repos/avatest/mediatr/islands 297 | fetch:/f/v3/blob/db380b8aaf2b9752711092bdae97a5defb3fbc2a.markdown.readme?re 171
+issues   url@ 1121ms settled@ 1725ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr/issues 1090 | fetch:/gild-fragments/manifest.json 954 | fetch:/avatest/mediatr/issues 628 | fetch:/api/repos/avatest/mediatr/islands 467
+code     url@  636ms settled@  937ms FULL-RELOAD scrollY=0
+    document:/avatest/mediatr 548 | fetch:/api/fragments/avatest/mediatr?page=code&path= 397 | fetch:/f/v3/blob/db380b8aaf2b9752711092bdae97a5defb3fbc2a.markdown.readme?re 154 | fetch:/f/v3/bundle/1e2528946da3bed4da92b05f94adb74cbbd9f374?repo=avatest%2Fm 66
+
+-codex

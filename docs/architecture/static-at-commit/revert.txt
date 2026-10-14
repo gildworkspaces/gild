@@ -1,0 +1,24 @@
+AssertionError [ERR_ASSERTION]: cold edge public fragment must read R2 once with zero DO/D1/render
++ actual - expected
+
+  {
++   d1: 2,
++   do: 1,
+-   d1: 0,
+-   do: 0,
+    r2: 1,
+    render: 0
+  }
+
+    at testHit (file:///Volumes/Projects/codex/gild-site/scripts/fragments-local.mjs:158:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///Volumes/Projects/codex/gild-site/scripts/fragments-local.mjs:180:5 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: { do: 1, d1: 2, r2: 1, render: 0 },
+  expected: { do: 0, d1: 0, r2: 1, render: 0 },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.3.1

@@ -1,0 +1,8 @@
+{
+  "durationMs": 7679,
+  "request": "/__fixture/lua-publish",
+  "measurement": "Local Wrangler request duration of the production publication barrier; excludes Git transport and document requests",
+  "files": 111,
+  "sourceCommit": "f9d529178f03d5b93279da088bb905718c1aa0f7",
+  "sourceTree": "f3430586e0a4fa97703118148c7c0760ce31998f"
+}

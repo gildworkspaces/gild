@@ -1,0 +1,41 @@
+$ node scripts/nav-probe-local.mjs
+(node:52167) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Volumes/Projects/codex/gild-site-nav/lib/api/contract.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Volumes/Projects/codex/gild-site-nav/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+mode cold browser cache, Save-Data
+landing 190 ms
+[["glance-test","/avatest/glance-test"],["Issues1","/avatest/glance-test/issues"],["Pull requests1","/avatest/glance-test/pulls"],["Actions","/avatest/glance-test/actions"],["Agents","/avatest/glance-test/agents"],["Score","/avatest/glance-test/score?ref=main"],["Code Score","/avatest/glance-test/score?ref=main"]]
+issues   url@   35ms settled@  338ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 28 | fetch:http://127.0.0.1:57323/avatest/glance-test/issues 25 | stylesheet:http://127.0.0.1:57323/_next/static/chunks/1cu_vyig9s_co.css 6 | fetch:http://127.0.0.1:57323/api/viewer 5
+pulls    url@   17ms settled@  320ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/avatest/glance-test/pulls 15 | fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 7 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+actions  url@   29ms settled@  331ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 128 | fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 122 | fetch:http://127.0.0.1:57323/avatest/glance-test/actions 22 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 0
+agents   url@   28ms settled@  329ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/v1/repos/avatest/glance-test/channel/partic 99 | fetch:http://127.0.0.1:57323/api/v1/repos/avatest/glance-test/channel/messag 92 | fetch:http://127.0.0.1:57323/avatest/glance-test/agents 14 | fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 8
+code     url@   29ms settled@  331ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 25 | fetch:http://127.0.0.1:57323/avatest/glance-test?ref=main 19 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+issues   url@   27ms settled@  329ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 7 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+code     url@   32ms settled@  336ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 29 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+mode prefetched browser cache
+landing 177 ms
+[["glance-test","/avatest/glance-test"],["Issues1","/avatest/glance-test/issues"],["Pull requests1","/avatest/glance-test/pulls"],["Actions","/avatest/glance-test/actions"],["Agents","/avatest/glance-test/agents"],["Score","/avatest/glance-test/score?ref=main"],["Code Score","/avatest/glance-test/score?ref=main"]]
+issues   url@   50ms settled@  354ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 38 | fetch:http://127.0.0.1:57323/api/viewer 34 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+pulls    url@   29ms settled@  332ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 7 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+actions  url@   28ms settled@  329ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 47 | fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 42 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 0
+agents   url@   26ms settled@  328ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 8 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+code     url@   28ms settled@  333ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 41 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 0
+issues   url@   26ms settled@  330ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 8 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+code     url@   25ms settled@  328ms soft scrollY=0
+    fetch:http://127.0.0.1:57323/api/repos/avatest/glance-test/islands 28 | other:http://127.0.0.1:57323/gild-fragments/abddafb3474b712193b728cd62087f22 1
+
+-codex

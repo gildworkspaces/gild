@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/acme/demo?lease&path=src/file0.ts",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/acme/demo/score?lease",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/acme/demo/commit/1111111111111111111111111111111111111111?lease",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/api/fragments/acme/demo?lease",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/api/repos/acme/demo/islands?lease",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  },
+  {
+    "path": "/f/v3/manifest/4444444444444444444444444444444444444444?lease&edge",
+    "calls": {
+      "do": 0,
+      "d1": 0,
+      "r2": 0,
+      "render": 0
+    }
+  }
+]

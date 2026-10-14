@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-08T14:54:56.799Z",
+  "local_worker": true,
+  "remote_writes": false,
+  "runs": [
+    {
+      "source": "https://github.com/jonschlinkert/is-number.git",
+      "status": {
+        "repository": "avatest/import-small",
+        "source": "https://github.com/jonschlinkert/is-number.git",
+        "mirror": true,
+        "state": "mirroring",
+        "progress": {
+          "phase": "metadata",
+          "completed": 11,
+          "message": "Import complete"
+        },
+        "warnings": [],
+        "error": null,
+        "updated_at": "2026-10-08T14:54:32.740Z",
+        "next_sync": "2026-10-08T15:54:32.740Z",
+        "summary": {
+          "branches": 3,
+          "tags": 1,
+          "commits": 2,
+          "records": 11,
+          "elapsed_ms": 4231.85349
+        }
+      },
+      "covered": [
+        "importCredentials",
+        "importBatch",
+        "importWorkflow",
+        "importFinish"
+      ],
+      "sourceCounts": {
+        "issues": 1,
+        "pulls": 2,
+        "comments": 3,
+        "reviews": 1,
+        "labels": 1
+      },
+      "calls": 0,
+      "cacheHits": 13,
+      "maxRequestBytes": 3666,
+      "elapsed_ms": 4922.3909029999995,
+      "max_rss_kib": 65248,
+      "worker_rss": {
+        "samples": 28,
+        "baseline_kib": 54920,
+        "peak_kib": 755004
+      },
+      "time_output": "        5.19 real         0.85 user         0.62 sys\n            66924544  maximum resident set size\n                 675  page faults",
+      "worker_request_max_bytes": 3666
+    }
+  ],
+  "pageTimings": [
+    {
+      "repository": "avatest/import-small",
+      "first_ms": 140.70332400000188,
+      "repeated_ms": 66.24429600000076
+    }
+  ],
+  "wall_ms": 45672
+}
